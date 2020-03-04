@@ -1,4 +1,4 @@
-# Team Mystery Mania
+# Team Mystery Machine
 
 ### Team Members:
     1. Michael Biehl
