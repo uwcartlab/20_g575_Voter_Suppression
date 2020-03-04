@@ -1,4 +1,4 @@
-# Team Mystery
+# Team Mystery Machine
 
 ### Team Members:
     1. Michael Biehl
@@ -10,7 +10,7 @@
         2. Scenario
 
     2. Requirements Doc
-        1. Representation Features
-        2. Interaction Features
+        1. Representation Scope
+        2. Interaction Scope
 
     3. Wireframes
