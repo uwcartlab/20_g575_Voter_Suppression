@@ -1,4 +1,4 @@
-# 20_g575_mystery
+# Team Mystery
 
 ### Team Members:
     1. Michael Biehl
@@ -9,9 +9,8 @@
         1. Persona
         2. Scenario
 
-    2. Requirements Document
-        1. Representation
-        2. Interaction
+    2. Requirements Doc
+        1. Representation Features
+        2. Interaction Features
 
     3. Wireframes
-
