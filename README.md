@@ -3,6 +3,7 @@
 ### Team Members:
     1. Michael Biehl
     2. Timothy Prestby
+    3. Regan Murray
 
 ### Final Proposal
     1. Persona/Scenario
