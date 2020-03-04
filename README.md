@@ -1,4 +1,4 @@
 # 20_g575_mystery
 
-Team members:
+Team Members:
 1. Michael Biehl
