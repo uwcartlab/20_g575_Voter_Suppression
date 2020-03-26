@@ -16,7 +16,7 @@
         Being of the general U.S. public, the user would encounter our tool
          online, as in a case of reading an online news article or scrolling
           on a social media site.  
-        Familiar interfaces, like common\ social media websites and desktop
+        Familiar interfaces, like common<br /> social media websites and desktop
          applications, constitute the bulk of the user's technology exposure.   
         After being presented with important background overview knowledge
          about voting restrictions, the main goal would be to learn about the
