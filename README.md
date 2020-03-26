@@ -11,7 +11,8 @@
         The prototypical user of our interactive tool about voter suppression
          would be from the general public.
         Such a hypothetical user would not usually be concerned with the
-         politics of voter accessibility, but would be concerned with them after learning about various restrictive laws.  
+         politics of voter accessibility, but would be concerned with them
+          after learning about various restrictive laws.  
         Being of the general U.S. public, the user would encounter our tool
          online, as in a case of reading an online news article or scrolling
           on a social media site.  
