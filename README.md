@@ -5,8 +5,8 @@
     2. Christopher Archuleta
     3. Regan Murray
 
-### Final Proposal
-    1. Persona/Scenario
+### Draft Proposal
+    I. Persona/Scenario
         1. Persona
         The prototypical user of our interactive tool about voter suppression would be from the general public.
         Such a hypothetical user would not usually be concerned with the politics of voter accessibility, but would be concerned with them after learning about various restrictive laws.  
@@ -36,52 +36,44 @@
         The user would exit the site with a better understanding of how and why places institute and dismantle restrictive voter laws.
 
 
-    2. Requirements Doc
+    II. Requirements Doc
         1. Representation
 
-        Screw this table stuff...
-        I'm just contributing the content for now, I'll check up on this after I do an assignment.
-        | Representation |
-        | --- |
-        | words |
+          A. Overview: Formatted descriptive text with embedded images, hyperlinks, and minimally interactive maps.
 
+          B. Basemap: Low opacity continental United States state boundaries. States and cities of interest bold and saturated.
 
-        Overview: Formatted descriptive text with embedded images, hyperlinks, and minimally interactive maps.
+          C. Cities: Point symbols with labels, highlighted as affordance to click.
 
-        Basemap: Low opacity continental United States state boundaries. States and cities of interest bold and saturated.
+          D. Polling Wards: Stylized lines with complementarily stylized labels for before and after laws were enacted
 
-        Cities: Point symbols with labels, highlighted as affordance to click.
+          E. Election results: Fill color of enumerated areas corresponding to winning political party.
+          ???Voter turnout as transparency (four or five classes)???
+          ???Proportional symbols???
+          ???Dot density since user cannot zoom in (avoid ecological fallacy)???
 
-        Polling Places: Stylized point symbols with complementarily stylized labels for before and after laws were enacted
+          F. Timeline: Horizontal accordion or mosaic of thumbnails to click on.
+          Timeline title situated above timeline and scale of years situated below.
 
-        Election results: Fill color of enumerated areas corresponding to winning political party.
-        ???Voter turnout as transparency (four or five classes)???
-        ???Proportional symbols???
-        ???Dot density since user cannot zoom in (avoid ecological fallacy)???
+          G. Demographic Information: Choropleth layer of counties depicting black population per capita of district in Atlanta
 
-        Timeline: Horizontal accordion or mosaic of thumbnails to click on.
-        Timeline title situated above timeline and scale of years situated below.
+          H. Legend: On map??? Regardless of location, user should not have to look for it. Will depict definition of symbols and color ramps used on maps
 
-        Demographic Information: Choropleth layer of counties depicting black population per capita of district in Atlanta
-
-        Legend: On map??? Regardless of location, user should not have to look for it. Will depict definition of symbols and color ramps used on maps
-
-        Side Panel: Collapsible block with text and hyperlinks with details and context.
-
-
+          I. Side Panel: Collapsible block with text and hyperlinks with details and context.
 
 
         2. Interaction
 
-        Map Slider: Sequence Vertically oriented before-after slider to juxtapose city map reexpressed for different times. (single scale maps in article portion only)
+          A. Information panel: User must acknowledge an info panel which provides guidance for website use. They "acknowledge" the panel by exiting out of it.
 
-        Click in and out of State: Zoom - Constrained 2-level zoom for exploratory map depicting US overall and chosen states
+          B. Scroll: Zoom - As user scrolls down webpage past the first map, a national-scale map zooms into 1 of 3 case study cities from story to provide geographic context for the user.
 
-        Click for Pop-up: Retrieve - clicking on a City in State-level scale will open open pop-up giving general info of location
+          C. Historical image grid: Retrieve - User clicks on a historical image to learn more about the city's history of voting. An information panel will appear and the photo will be enlarged.
 
+          D. Map Slider: Sequence - User can move a slider overlaid onto the map to spatially view how voting wards were changed between two years.
 
+          E. Timeline: Sequence - User can sequence through a timeline using buttons or direct manipulation to see voter turnout at different points in time.
 
+          F. State Selection: Retrieve - User selects a state and is presented with data on voter turnout from that state.
 
-
-
-    3. Wireframes
+    III. Wireframes
