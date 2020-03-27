@@ -77,3 +77,7 @@
           F. State Selection: Retrieve - User selects a state and is presented with data on voter turnout from that state.
 
     III. Wireframes
+      ![wireframe_01](/wireframe_1-01.png)
+      ![wireframe_02](/wireframe_2-01.png)
+      ![wireframe_03](/wireframe_3-01.png)
+      ![wireframe_04](/wireframe_4-01.png)
