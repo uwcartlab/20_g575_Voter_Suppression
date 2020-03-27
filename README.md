@@ -52,7 +52,7 @@
 
         Cities: Point symbols with labels, highlighted as affordance to click.
 
-        Polling Places: Stylized point symbols with complementarily stylized labels.
+        Polling Places: Stylized point symbols with complementarily stylized labels for before and after laws were enacted
 
         Election results: Fill color of enumerated areas corresponding to winning political party.
         ???Voter turnout as transparency (four or five classes)???
@@ -62,11 +62,9 @@
         Timeline: Horizontal accordion or mosaic of thumbnails to click on.
         Timeline title situated above timeline and scale of years situated below.
 
-        Sequence: Vertically oriented before-after slider to juxtapose city map reexpressed for different times.
+        Demographic Information: Choropleth layer of counties depicting black population per capita of district in Atlanta
 
-        Demographic Information: ???Choropleth (ambiguous colors)???
-
-        Legend: On map??? Regardless of location, user should not have to look for it.
+        Legend: On map??? Regardless of location, user should not have to look for it. Will depict definition of symbols and color ramps used on maps
 
         Side Panel: Collapsible block with text and hyperlinks with details and context.
 
@@ -74,5 +72,16 @@
 
 
         2. Interaction
+
+        Map Slider: Sequence Vertically oriented before-after slider to juxtapose city map reexpressed for different times. (single scale maps in article portion only)
+
+        Click in and out of State: Zoom - Constrained 2-level zoom for exploratory map depicting US overall and chosen states
+
+        Click for Pop-up: Retrieve - clicking on a City in State-level scale will open open pop-up giving general info of location
+
+
+
+
+
 
     3. Wireframes
