@@ -1,0 +1,397 @@
+county,precinct,office,district,party,candidate,votes,vtd
+FORD,Dodge City Precinct 01,Governor,,Democratic,"Davis, Paul",143,00005A
+FORD,Dodge City Precinct 01,Governor,,Libertarian,"Umbehr, Keen A.",21,00005A
+FORD,Dodge City Precinct 01,Governor,,Republican,"Brownback, Sam",211,00005A
+FORD,Dodge City Airport,Governor,,Democratic,"Davis, Paul",0,00005B
+FORD,Dodge City Airport,Governor,,Libertarian,"Umbehr, Keen A.",0,00005B
+FORD,Dodge City Airport,Governor,,Republican,"Brownback, Sam",0,00005B
+FORD,Dodge City Industrial Park,Governor,,Democratic,"Davis, Paul",0,00005C
+FORD,Dodge City Industrial Park,Governor,,Libertarian,"Umbehr, Keen A.",0,00005C
+FORD,Dodge City Industrial Park,Governor,,Republican,"Brownback, Sam",0,00005C
+FORD,Dodge City Precinct 03,Governor,,Democratic,"Davis, Paul",137,70
+FORD,Dodge City Precinct 03,Governor,,Libertarian,"Umbehr, Keen A.",12,70
+FORD,Dodge City Precinct 03,Governor,,Republican,"Brownback, Sam",122,70
+FORD,Dodge City Precinct 04,Governor,,Democratic,"Davis, Paul",252,00008A
+FORD,Dodge City Precinct 04,Governor,,Libertarian,"Umbehr, Keen A.",38,00008A
+FORD,Dodge City Precinct 04,Governor,,Republican,"Brownback, Sam",343,00008A
+FORD,Dodge City Excel #1,Governor,,Democratic,"Davis, Paul",0,00008B
+FORD,Dodge City Excel #1,Governor,,Libertarian,"Umbehr, Keen A.",0,00008B
+FORD,Dodge City Excel #1,Governor,,Republican,"Brownback, Sam",0,00008B
+FORD,Dodge City Excel #2,Governor,,Democratic,"Davis, Paul",0,00008C
+FORD,Dodge City Excel #2,Governor,,Libertarian,"Umbehr, Keen A.",0,00008C
+FORD,Dodge City Excel #2,Governor,,Republican,"Brownback, Sam",0,00008C
+FORD,Dodge City Millard,Governor,,Democratic,"Davis, Paul",0,00008D
+FORD,Dodge City Millard,Governor,,Libertarian,"Umbehr, Keen A.",0,00008D
+FORD,Dodge City Millard,Governor,,Republican,"Brownback, Sam",0,00008D
+FORD,Dodge City Precinct 06,Governor,,Democratic,"Davis, Paul",534,100
+FORD,Dodge City Precinct 06,Governor,,Libertarian,"Umbehr, Keen A.",49,100
+FORD,Dodge City Precinct 06,Governor,,Republican,"Brownback, Sam",855,100
+FORD,Dodge Township Ward 3,Governor,,Democratic,"Davis, Paul",5,200
+FORD,Dodge Township Ward 3,Governor,,Libertarian,"Umbehr, Keen A.",1,200
+FORD,Dodge Township Ward 3,Governor,,Republican,"Brownback, Sam",17,200
+FORD,Dodge Township H115,Governor,,Democratic,"Davis, Paul",49,120020
+FORD,Dodge Township H115,Governor,,Libertarian,"Umbehr, Keen A.",9,120020
+FORD,Dodge Township H115,Governor,,Republican,"Brownback, Sam",124,120020
+FORD,Dodge Township H119 A,Governor,,Democratic,"Davis, Paul",0,12003A
+FORD,Dodge Township H119 A,Governor,,Libertarian,"Umbehr, Keen A.",0,12003A
+FORD,Dodge Township H119 A,Governor,,Republican,"Brownback, Sam",1,12003A
+FORD,Dodge Township H119,Governor,,Democratic,"Davis, Paul",10,120030
+FORD,Dodge Township H119,Governor,,Libertarian,"Umbehr, Keen A.",1,120030
+FORD,Dodge Township H119,Governor,,Republican,"Brownback, Sam",24,120030
+FORD,Dodge City Precinct 03 H115,Governor,,Democratic,"Davis, Paul",0,120100
+FORD,Dodge City Precinct 03 H115,Governor,,Libertarian,"Umbehr, Keen A.",0,120100
+FORD,Dodge City Precinct 03 H115,Governor,,Republican,"Brownback, Sam",0,120100
+FORD,Dodge City Township C H115,Governor,,Democratic,"Davis, Paul",0,120110
+FORD,Dodge City Township C H115,Governor,,Libertarian,"Umbehr, Keen A.",0,120110
+FORD,Dodge City Township C H115,Governor,,Republican,"Brownback, Sam",0,120110
+FORD,Dodge City Township W H119,Governor,,Democratic,"Davis, Paul",0,120120
+FORD,Dodge City Township W H119,Governor,,Libertarian,"Umbehr, Keen A.",0,120120
+FORD,Dodge City Township W H119,Governor,,Republican,"Brownback, Sam",0,120120
+FORD,Dodge City Precinct 09,Governor,,Democratic,"Davis, Paul",2,120130
+FORD,Dodge City Precinct 09,Governor,,Libertarian,"Umbehr, Keen A.",0,120130
+FORD,Dodge City Precinct 09,Governor,,Republican,"Brownback, Sam",3,120130
+FORD,Dodge City Precinct 10,Governor,,Democratic,"Davis, Paul",0,120140
+FORD,Dodge City Precinct 10,Governor,,Libertarian,"Umbehr, Keen A.",0,120140
+FORD,Dodge City Precinct 10,Governor,,Republican,"Brownback, Sam",0,120140
+FORD,Dodge City Precinct 02,Governor,,Democratic,"Davis, Paul",94,130010
+FORD,Dodge City Precinct 02,Governor,,Libertarian,"Umbehr, Keen A.",19,130010
+FORD,Dodge City Precinct 02,Governor,,Republican,"Brownback, Sam",116,130010
+FORD,Dodge City Precinct 05,Governor,,Democratic,"Davis, Paul",414,130020
+FORD,Dodge City Precinct 05,Governor,,Libertarian,"Umbehr, Keen A.",42,130020
+FORD,Dodge City Precinct 05,Governor,,Republican,"Brownback, Sam",647,130020
+FORD,Dodge City Precinct 07,Governor,,Democratic,"Davis, Paul",17,600010
+FORD,Dodge City Precinct 07,Governor,,Libertarian,"Umbehr, Keen A.",2,600010
+FORD,Dodge City Precinct 07,Governor,,Republican,"Brownback, Sam",36,600010
+FORD,Dodge City Precinct 08,Governor,,Democratic,"Davis, Paul",0,800010
+FORD,Dodge City Precinct 08,Governor,,Libertarian,"Umbehr, Keen A.",0,800010
+FORD,Dodge City Precinct 08,Governor,,Republican,"Brownback, Sam",0,800010
+FORD,Dodge City Precinct 01,State House,115,Democratic,"Low, Mark",141,00005A
+FORD,Dodge City Precinct 01,State House,115,Republican,"Ryckman, Ronald W Sr.",226,00005A
+FORD,Dodge City Airport,State House,119,Democratic,"Thomas, John E.",0,00005B
+FORD,Dodge City Airport,State House,119,Republican,"Estes, Bud",0,00005B
+FORD,Dodge City Industrial Park,State House,115,Democratic,"Low, Mark",0,00005C
+FORD,Dodge City Industrial Park,State House,115,Republican,"Ryckman, Ronald W Sr.",0,00005C
+FORD,Dodge City Precinct 03,State House,119,Democratic,"Thomas, John E.",134,70
+FORD,Dodge City Precinct 03,State House,119,Republican,"Estes, Bud",137,70
+FORD,Dodge City Precinct 04,State House,119,Democratic,"Thomas, John E.",196,00008A
+FORD,Dodge City Precinct 04,State House,119,Republican,"Estes, Bud",437,00008A
+FORD,Dodge City Excel #1,State House,119,Democratic,"Thomas, John E.",0,00008B
+FORD,Dodge City Excel #1,State House,119,Republican,"Estes, Bud",0,00008B
+FORD,Dodge City Excel #2,State House,119,Democratic,"Thomas, John E.",0,00008C
+FORD,Dodge City Excel #2,State House,119,Republican,"Estes, Bud",0,00008C
+FORD,Dodge City Millard,State House,119,Democratic,"Thomas, John E.",0,00008D
+FORD,Dodge City Millard,State House,119,Republican,"Estes, Bud",0,00008D
+FORD,Dodge City Precinct 06,State House,119,Democratic,"Thomas, John E.",389,100
+FORD,Dodge City Precinct 06,State House,119,Republican,"Estes, Bud",1031,100
+FORD,Dodge Township Ward 3,State House,119,Democratic,"Thomas, John E.",7,200
+FORD,Dodge Township Ward 3,State House,119,Republican,"Estes, Bud",15,200
+FORD,Dodge Township H115,State House,115,Democratic,"Low, Mark",40,120020
+FORD,Dodge Township H115,State House,115,Republican,"Ryckman, Ronald W Sr.",136,120020
+FORD,Dodge Township H119 A,State House,119,Democratic,"Thomas, John E.",0,12003A
+FORD,Dodge Township H119 A,State House,119,Republican,"Estes, Bud",1,12003A
+FORD,Dodge Township H119,State House,119,Democratic,"Thomas, John E.",4,120030
+FORD,Dodge Township H119,State House,119,Republican,"Estes, Bud",30,120030
+FORD,Dodge City Precinct 03 H115,State House,115,Democratic,"Low, Mark",0,120100
+FORD,Dodge City Precinct 03 H115,State House,115,Republican,"Ryckman, Ronald W Sr.",0,120100
+FORD,Dodge City Township C H115,State House,115,Democratic,"Low, Mark",0,120110
+FORD,Dodge City Township C H115,State House,115,Republican,"Ryckman, Ronald W Sr.",0,120110
+FORD,Dodge City Township W H119,State House,119,Democratic,"Thomas, John E.",0,120120
+FORD,Dodge City Township W H119,State House,119,Republican,"Estes, Bud",0,120120
+FORD,Dodge City Precinct 09,State House,115,Democratic,"Low, Mark",1,120130
+FORD,Dodge City Precinct 09,State House,115,Republican,"Ryckman, Ronald W Sr.",4,120130
+FORD,Dodge City Precinct 10,State House,115,Democratic,"Low, Mark",0,120140
+FORD,Dodge City Precinct 10,State House,115,Republican,"Ryckman, Ronald W Sr.",0,120140
+FORD,Dodge City Precinct 02,State House,119,Democratic,"Thomas, John E.",92,130010
+FORD,Dodge City Precinct 02,State House,119,Republican,"Estes, Bud",134,130010
+FORD,Dodge City Precinct 05,State House,119,Democratic,"Thomas, John E.",275,130020
+FORD,Dodge City Precinct 05,State House,119,Republican,"Estes, Bud",822,130020
+FORD,Dodge City Precinct 07,State House,119,Democratic,"Thomas, John E.",5,600010
+FORD,Dodge City Precinct 07,State House,119,Republican,"Estes, Bud",49,600010
+FORD,Dodge City Precinct 08,State House,119,Democratic,"Thomas, John E.",0,800010
+FORD,Dodge City Precinct 08,State House,119,Republican,"Estes, Bud",0,800010
+FORD,Dodge City Precinct 01,U.S. House,1,Democratic,"Sherow, James E.",139,00005A
+FORD,Dodge City Precinct 01,U.S. House,1,Republican,"Huelskamp, Tim",232,00005A
+FORD,Dodge City Airport,U.S. House,1,Democratic,"Sherow, James E.",0,00005B
+FORD,Dodge City Airport,U.S. House,1,Republican,"Huelskamp, Tim",0,00005B
+FORD,Dodge City Industrial Park,U.S. House,1,Democratic,"Sherow, James E.",0,00005C
+FORD,Dodge City Industrial Park,U.S. House,1,Republican,"Huelskamp, Tim",0,00005C
+FORD,Dodge City Precinct 03,U.S. House,1,Democratic,"Sherow, James E.",123,70
+FORD,Dodge City Precinct 03,U.S. House,1,Republican,"Huelskamp, Tim",145,70
+FORD,Dodge City Precinct 04,U.S. House,1,Democratic,"Sherow, James E.",246,00008A
+FORD,Dodge City Precinct 04,U.S. House,1,Republican,"Huelskamp, Tim",384,00008A
+FORD,Dodge City Excel #1,U.S. House,1,Democratic,"Sherow, James E.",0,00008B
+FORD,Dodge City Excel #1,U.S. House,1,Republican,"Huelskamp, Tim",0,00008B
+FORD,Dodge City Excel #2,U.S. House,1,Democratic,"Sherow, James E.",0,00008C
+FORD,Dodge City Excel #2,U.S. House,1,Republican,"Huelskamp, Tim",0,00008C
+FORD,Dodge City Millard,U.S. House,1,Democratic,"Sherow, James E.",0,00008D
+FORD,Dodge City Millard,U.S. House,1,Republican,"Huelskamp, Tim",0,00008D
+FORD,Dodge City Precinct 06,U.S. House,1,Democratic,"Sherow, James E.",497,100
+FORD,Dodge City Precinct 06,U.S. House,1,Republican,"Huelskamp, Tim",921,100
+FORD,Dodge Township Ward 3,U.S. House,1,Democratic,"Sherow, James E.",5,200
+FORD,Dodge Township Ward 3,U.S. House,1,Republican,"Huelskamp, Tim",19,200
+FORD,Dodge Township H115,U.S. House,1,Democratic,"Sherow, James E.",53,120020
+FORD,Dodge Township H115,U.S. House,1,Republican,"Huelskamp, Tim",130,120020
+FORD,Dodge Township H119 A,U.S. House,1,Democratic,"Sherow, James E.",0,12003A
+FORD,Dodge Township H119 A,U.S. House,1,Republican,"Huelskamp, Tim",1,12003A
+FORD,Dodge Township H119,U.S. House,1,Democratic,"Sherow, James E.",7,120030
+FORD,Dodge Township H119,U.S. House,1,Republican,"Huelskamp, Tim",27,120030
+FORD,Dodge City Precinct 03 H115,U.S. House,1,Democratic,"Sherow, James E.",0,120100
+FORD,Dodge City Precinct 03 H115,U.S. House,1,Republican,"Huelskamp, Tim",0,120100
+FORD,Dodge City Township C H115,U.S. House,1,Democratic,"Sherow, James E.",0,120110
+FORD,Dodge City Township C H115,U.S. House,1,Republican,"Huelskamp, Tim",0,120110
+FORD,Dodge City Township W H119,U.S. House,1,Democratic,"Sherow, James E.",0,120120
+FORD,Dodge City Township W H119,U.S. House,1,Republican,"Huelskamp, Tim",0,120120
+FORD,Dodge City Precinct 09,U.S. House,1,Democratic,"Sherow, James E.",2,120130
+FORD,Dodge City Precinct 09,U.S. House,1,Republican,"Huelskamp, Tim",3,120130
+FORD,Dodge City Precinct 10,U.S. House,1,Democratic,"Sherow, James E.",0,120140
+FORD,Dodge City Precinct 10,U.S. House,1,Republican,"Huelskamp, Tim",0,120140
+FORD,Dodge City Precinct 02,U.S. House,1,Democratic,"Sherow, James E.",92,130010
+FORD,Dodge City Precinct 02,U.S. House,1,Republican,"Huelskamp, Tim",132,130010
+FORD,Dodge City Precinct 05,U.S. House,1,Democratic,"Sherow, James E.",366,130020
+FORD,Dodge City Precinct 05,U.S. House,1,Republican,"Huelskamp, Tim",732,130020
+FORD,Dodge City Precinct 07,U.S. House,1,Democratic,"Sherow, James E.",11,600010
+FORD,Dodge City Precinct 07,U.S. House,1,Republican,"Huelskamp, Tim",42,600010
+FORD,Dodge City Precinct 08,U.S. House,1,Democratic,"Sherow, James E.",0,800010
+FORD,Dodge City Precinct 08,U.S. House,1,Republican,"Huelskamp, Tim",0,800010
+FORD,Dodge City Precinct 01,Attorney General,,Democratic,"Kotich, A.J.",123,00005A
+FORD,Dodge City Precinct 01,Attorney General,,Republican,"Schmidt, Derek",241,00005A
+FORD,Dodge City Airport,Attorney General,,Democratic,"Kotich, A.J.",0,00005B
+FORD,Dodge City Airport,Attorney General,,Republican,"Schmidt, Derek",0,00005B
+FORD,Dodge City Industrial Park,Attorney General,,Democratic,"Kotich, A.J.",0,00005C
+FORD,Dodge City Industrial Park,Attorney General,,Republican,"Schmidt, Derek",0,00005C
+FORD,Dodge City Precinct 03,Attorney General,,Democratic,"Kotich, A.J.",128,70
+FORD,Dodge City Precinct 03,Attorney General,,Republican,"Schmidt, Derek",140,70
+FORD,Dodge City Precinct 04,Attorney General,,Democratic,"Kotich, A.J.",193,00008A
+FORD,Dodge City Precinct 04,Attorney General,,Republican,"Schmidt, Derek",424,00008A
+FORD,Dodge City Excel #1,Attorney General,,Democratic,"Kotich, A.J.",0,00008B
+FORD,Dodge City Excel #1,Attorney General,,Republican,"Schmidt, Derek",0,00008B
+FORD,Dodge City Excel #2,Attorney General,,Democratic,"Kotich, A.J.",0,00008C
+FORD,Dodge City Excel #2,Attorney General,,Republican,"Schmidt, Derek",0,00008C
+FORD,Dodge City Millard,Attorney General,,Democratic,"Kotich, A.J.",0,00008D
+FORD,Dodge City Millard,Attorney General,,Republican,"Schmidt, Derek",0,00008D
+FORD,Dodge City Precinct 06,Attorney General,,Democratic,"Kotich, A.J.",316,100
+FORD,Dodge City Precinct 06,Attorney General,,Republican,"Schmidt, Derek",1090,100
+FORD,Dodge Township Ward 3,Attorney General,,Democratic,"Kotich, A.J.",4,200
+FORD,Dodge Township Ward 3,Attorney General,,Republican,"Schmidt, Derek",18,200
+FORD,Dodge Township H115,Attorney General,,Democratic,"Kotich, A.J.",33,120020
+FORD,Dodge Township H115,Attorney General,,Republican,"Schmidt, Derek",142,120020
+FORD,Dodge Township H119 A,Attorney General,,Democratic,"Kotich, A.J.",0,12003A
+FORD,Dodge Township H119 A,Attorney General,,Republican,"Schmidt, Derek",1,12003A
+FORD,Dodge Township H119,Attorney General,,Democratic,"Kotich, A.J.",2,120030
+FORD,Dodge Township H119,Attorney General,,Republican,"Schmidt, Derek",31,120030
+FORD,Dodge City Precinct 03 H115,Attorney General,,Democratic,"Kotich, A.J.",0,120100
+FORD,Dodge City Precinct 03 H115,Attorney General,,Republican,"Schmidt, Derek",0,120100
+FORD,Dodge City Township C H115,Attorney General,,Democratic,"Kotich, A.J.",0,120110
+FORD,Dodge City Township C H115,Attorney General,,Republican,"Schmidt, Derek",0,120110
+FORD,Dodge City Township W H119,Attorney General,,Democratic,"Kotich, A.J.",0,120120
+FORD,Dodge City Township W H119,Attorney General,,Republican,"Schmidt, Derek",0,120120
+FORD,Dodge City Precinct 09,Attorney General,,Democratic,"Kotich, A.J.",1,120130
+FORD,Dodge City Precinct 09,Attorney General,,Republican,"Schmidt, Derek",4,120130
+FORD,Dodge City Precinct 10,Attorney General,,Democratic,"Kotich, A.J.",0,120140
+FORD,Dodge City Precinct 10,Attorney General,,Republican,"Schmidt, Derek",0,120140
+FORD,Dodge City Precinct 02,Attorney General,,Democratic,"Kotich, A.J.",83,130010
+FORD,Dodge City Precinct 02,Attorney General,,Republican,"Schmidt, Derek",142,130010
+FORD,Dodge City Precinct 05,Attorney General,,Democratic,"Kotich, A.J.",246,130020
+FORD,Dodge City Precinct 05,Attorney General,,Republican,"Schmidt, Derek",834,130020
+FORD,Dodge City Precinct 07,Attorney General,,Democratic,"Kotich, A.J.",4,600010
+FORD,Dodge City Precinct 07,Attorney General,,Republican,"Schmidt, Derek",49,600010
+FORD,Dodge City Precinct 08,Attorney General,,Democratic,"Kotich, A.J.",0,800010
+FORD,Dodge City Precinct 08,Attorney General,,Republican,"Schmidt, Derek",0,800010
+FORD,Dodge City Precinct 01,Commissioner of Insurance,,Democratic,"Anderson, Dennis",138,00005A
+FORD,Dodge City Precinct 01,Commissioner of Insurance,,Republican,"Selzer, Ken",224,00005A
+FORD,Dodge City Airport,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,00005B
+FORD,Dodge City Airport,Commissioner of Insurance,,Republican,"Selzer, Ken",0,00005B
+FORD,Dodge City Industrial Park,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,00005C
+FORD,Dodge City Industrial Park,Commissioner of Insurance,,Republican,"Selzer, Ken",0,00005C
+FORD,Dodge City Precinct 03,Commissioner of Insurance,,Democratic,"Anderson, Dennis",139,70
+FORD,Dodge City Precinct 03,Commissioner of Insurance,,Republican,"Selzer, Ken",127,70
+FORD,Dodge City Precinct 04,Commissioner of Insurance,,Democratic,"Anderson, Dennis",209,00008A
+FORD,Dodge City Precinct 04,Commissioner of Insurance,,Republican,"Selzer, Ken",388,00008A
+FORD,Dodge City Excel #1,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,00008B
+FORD,Dodge City Excel #1,Commissioner of Insurance,,Republican,"Selzer, Ken",0,00008B
+FORD,Dodge City Excel #2,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,00008C
+FORD,Dodge City Excel #2,Commissioner of Insurance,,Republican,"Selzer, Ken",0,00008C
+FORD,Dodge City Millard,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,00008D
+FORD,Dodge City Millard,Commissioner of Insurance,,Republican,"Selzer, Ken",0,00008D
+FORD,Dodge City Precinct 06,Commissioner of Insurance,,Democratic,"Anderson, Dennis",389,100
+FORD,Dodge City Precinct 06,Commissioner of Insurance,,Republican,"Selzer, Ken",977,100
+FORD,Dodge Township Ward 3,Commissioner of Insurance,,Democratic,"Anderson, Dennis",6,200
+FORD,Dodge Township Ward 3,Commissioner of Insurance,,Republican,"Selzer, Ken",16,200
+FORD,Dodge Township H115,Commissioner of Insurance,,Democratic,"Anderson, Dennis",48,120020
+FORD,Dodge Township H115,Commissioner of Insurance,,Republican,"Selzer, Ken",124,120020
+FORD,Dodge Township H119 A,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,12003A
+FORD,Dodge Township H119 A,Commissioner of Insurance,,Republican,"Selzer, Ken",1,12003A
+FORD,Dodge Township H119,Commissioner of Insurance,,Democratic,"Anderson, Dennis",3,120030
+FORD,Dodge Township H119,Commissioner of Insurance,,Republican,"Selzer, Ken",30,120030
+FORD,Dodge City Precinct 03 H115,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,120100
+FORD,Dodge City Precinct 03 H115,Commissioner of Insurance,,Republican,"Selzer, Ken",0,120100
+FORD,Dodge City Township C H115,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,120110
+FORD,Dodge City Township C H115,Commissioner of Insurance,,Republican,"Selzer, Ken",0,120110
+FORD,Dodge City Township W H119,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,120120
+FORD,Dodge City Township W H119,Commissioner of Insurance,,Republican,"Selzer, Ken",0,120120
+FORD,Dodge City Precinct 09,Commissioner of Insurance,,Democratic,"Anderson, Dennis",1,120130
+FORD,Dodge City Precinct 09,Commissioner of Insurance,,Republican,"Selzer, Ken",3,120130
+FORD,Dodge City Precinct 10,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,120140
+FORD,Dodge City Precinct 10,Commissioner of Insurance,,Republican,"Selzer, Ken",0,120140
+FORD,Dodge City Precinct 02,Commissioner of Insurance,,Democratic,"Anderson, Dennis",95,130010
+FORD,Dodge City Precinct 02,Commissioner of Insurance,,Republican,"Selzer, Ken",127,130010
+FORD,Dodge City Precinct 05,Commissioner of Insurance,,Democratic,"Anderson, Dennis",301,130020
+FORD,Dodge City Precinct 05,Commissioner of Insurance,,Republican,"Selzer, Ken",751,130020
+FORD,Dodge City Precinct 07,Commissioner of Insurance,,Democratic,"Anderson, Dennis",7,600010
+FORD,Dodge City Precinct 07,Commissioner of Insurance,,Republican,"Selzer, Ken",44,600010
+FORD,Dodge City Precinct 08,Commissioner of Insurance,,Democratic,"Anderson, Dennis",0,800010
+FORD,Dodge City Precinct 08,Commissioner of Insurance,,Republican,"Selzer, Ken",0,800010
+FORD,Dodge City Precinct 01,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",135,00005A
+FORD,Dodge City Precinct 01,Secretary of State,,Republican,"Kobach, Kris",234,00005A
+FORD,Dodge City Airport,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,00005B
+FORD,Dodge City Airport,Secretary of State,,Republican,"Kobach, Kris",0,00005B
+FORD,Dodge City Industrial Park,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,00005C
+FORD,Dodge City Industrial Park,Secretary of State,,Republican,"Kobach, Kris",0,00005C
+FORD,Dodge City Precinct 03,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",139,70
+FORD,Dodge City Precinct 03,Secretary of State,,Republican,"Kobach, Kris",131,70
+FORD,Dodge City Precinct 04,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",216,00008A
+FORD,Dodge City Precinct 04,Secretary of State,,Republican,"Kobach, Kris",406,00008A
+FORD,Dodge City Excel #1,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,00008B
+FORD,Dodge City Excel #1,Secretary of State,,Republican,"Kobach, Kris",0,00008B
+FORD,Dodge City Excel #2,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,00008C
+FORD,Dodge City Excel #2,Secretary of State,,Republican,"Kobach, Kris",0,00008C
+FORD,Dodge City Millard,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,00008D
+FORD,Dodge City Millard,Secretary of State,,Republican,"Kobach, Kris",0,00008D
+FORD,Dodge City Precinct 06,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",436,100
+FORD,Dodge City Precinct 06,Secretary of State,,Republican,"Kobach, Kris",991,100
+FORD,Dodge Township Ward 3,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",4,200
+FORD,Dodge Township Ward 3,Secretary of State,,Republican,"Kobach, Kris",18,200
+FORD,Dodge Township H115,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",48,120020
+FORD,Dodge Township H115,Secretary of State,,Republican,"Kobach, Kris",129,120020
+FORD,Dodge Township H119 A,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,12003A
+FORD,Dodge Township H119 A,Secretary of State,,Republican,"Kobach, Kris",1,12003A
+FORD,Dodge Township H119,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",7,120030
+FORD,Dodge Township H119,Secretary of State,,Republican,"Kobach, Kris",26,120030
+FORD,Dodge City Precinct 03 H115,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,120100
+FORD,Dodge City Precinct 03 H115,Secretary of State,,Republican,"Kobach, Kris",0,120100
+FORD,Dodge City Township C H115,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,120110
+FORD,Dodge City Township C H115,Secretary of State,,Republican,"Kobach, Kris",0,120110
+FORD,Dodge City Township W H119,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,120120
+FORD,Dodge City Township W H119,Secretary of State,,Republican,"Kobach, Kris",0,120120
+FORD,Dodge City Precinct 09,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",3,120130
+FORD,Dodge City Precinct 09,Secretary of State,,Republican,"Kobach, Kris",2,120130
+FORD,Dodge City Precinct 10,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,120140
+FORD,Dodge City Precinct 10,Secretary of State,,Republican,"Kobach, Kris",0,120140
+FORD,Dodge City Precinct 02,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",90,130010
+FORD,Dodge City Precinct 02,Secretary of State,,Republican,"Kobach, Kris",134,130010
+FORD,Dodge City Precinct 05,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",328,130020
+FORD,Dodge City Precinct 05,Secretary of State,,Republican,"Kobach, Kris",764,130020
+FORD,Dodge City Precinct 07,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",12,600010
+FORD,Dodge City Precinct 07,Secretary of State,,Republican,"Kobach, Kris",40,600010
+FORD,Dodge City Precinct 08,Secretary of State,,Democratic,"Schodorf, Jean Kurtis",0,800010
+FORD,Dodge City Precinct 08,Secretary of State,,Republican,"Kobach, Kris",0,800010
+FORD,Dodge City Precinct 01,State Treasurer,,Democratic,"Alldritt, Carmen",115,00005A
+FORD,Dodge City Precinct 01,State Treasurer,,Republican,"Estes, Ron",253,00005A
+FORD,Dodge City Airport,State Treasurer,,Democratic,"Alldritt, Carmen",0,00005B
+FORD,Dodge City Airport,State Treasurer,,Republican,"Estes, Ron",0,00005B
+FORD,Dodge City Industrial Park,State Treasurer,,Democratic,"Alldritt, Carmen",0,00005C
+FORD,Dodge City Industrial Park,State Treasurer,,Republican,"Estes, Ron",0,00005C
+FORD,Dodge City Precinct 03,State Treasurer,,Democratic,"Alldritt, Carmen",122,70
+FORD,Dodge City Precinct 03,State Treasurer,,Republican,"Estes, Ron",147,70
+FORD,Dodge City Precinct 04,State Treasurer,,Democratic,"Alldritt, Carmen",156,00008A
+FORD,Dodge City Precinct 04,State Treasurer,,Republican,"Estes, Ron",464,00008A
+FORD,Dodge City Excel #1,State Treasurer,,Democratic,"Alldritt, Carmen",0,00008B
+FORD,Dodge City Excel #1,State Treasurer,,Republican,"Estes, Ron",0,00008B
+FORD,Dodge City Excel #2,State Treasurer,,Democratic,"Alldritt, Carmen",0,00008C
+FORD,Dodge City Excel #2,State Treasurer,,Republican,"Estes, Ron",0,00008C
+FORD,Dodge City Millard,State Treasurer,,Democratic,"Alldritt, Carmen",0,00008D
+FORD,Dodge City Millard,State Treasurer,,Republican,"Estes, Ron",0,00008D
+FORD,Dodge City Precinct 06,State Treasurer,,Democratic,"Alldritt, Carmen",286,100
+FORD,Dodge City Precinct 06,State Treasurer,,Republican,"Estes, Ron",1126,100
+FORD,Dodge Township Ward 3,State Treasurer,,Democratic,"Alldritt, Carmen",3,200
+FORD,Dodge Township Ward 3,State Treasurer,,Republican,"Estes, Ron",20,200
+FORD,Dodge Township H115,State Treasurer,,Democratic,"Alldritt, Carmen",27,120020
+FORD,Dodge Township H115,State Treasurer,,Republican,"Estes, Ron",150,120020
+FORD,Dodge Township H119 A,State Treasurer,,Democratic,"Alldritt, Carmen",0,12003A
+FORD,Dodge Township H119 A,State Treasurer,,Republican,"Estes, Ron",1,12003A
+FORD,Dodge Township H119,State Treasurer,,Democratic,"Alldritt, Carmen",3,120030
+FORD,Dodge Township H119,State Treasurer,,Republican,"Estes, Ron",30,120030
+FORD,Dodge City Precinct 03 H115,State Treasurer,,Democratic,"Alldritt, Carmen",0,120100
+FORD,Dodge City Precinct 03 H115,State Treasurer,,Republican,"Estes, Ron",0,120100
+FORD,Dodge City Township C H115,State Treasurer,,Democratic,"Alldritt, Carmen",0,120110
+FORD,Dodge City Township C H115,State Treasurer,,Republican,"Estes, Ron",0,120110
+FORD,Dodge City Township W H119,State Treasurer,,Democratic,"Alldritt, Carmen",0,120120
+FORD,Dodge City Township W H119,State Treasurer,,Republican,"Estes, Ron",0,120120
+FORD,Dodge City Precinct 09,State Treasurer,,Democratic,"Alldritt, Carmen",1,120130
+FORD,Dodge City Precinct 09,State Treasurer,,Republican,"Estes, Ron",4,120130
+FORD,Dodge City Precinct 10,State Treasurer,,Democratic,"Alldritt, Carmen",0,120140
+FORD,Dodge City Precinct 10,State Treasurer,,Republican,"Estes, Ron",0,120140
+FORD,Dodge City Precinct 02,State Treasurer,,Democratic,"Alldritt, Carmen",79,130010
+FORD,Dodge City Precinct 02,State Treasurer,,Republican,"Estes, Ron",147,130010
+FORD,Dodge City Precinct 05,State Treasurer,,Democratic,"Alldritt, Carmen",221,130020
+FORD,Dodge City Precinct 05,State Treasurer,,Republican,"Estes, Ron",857,130020
+FORD,Dodge City Precinct 07,State Treasurer,,Democratic,"Alldritt, Carmen",4,600010
+FORD,Dodge City Precinct 07,State Treasurer,,Republican,"Estes, Ron",50,600010
+FORD,Dodge City Precinct 08,State Treasurer,,Democratic,"Alldritt, Carmen",0,800010
+FORD,Dodge City Precinct 08,State Treasurer,,Republican,"Estes, Ron",0,800010
+FORD,Dodge City Precinct 01,U.S. Senate,,independent,"Orman, Greg",117,00005A
+FORD,Dodge City Precinct 01,U.S. Senate,,Libertarian,"Batson, Randall",20,00005A
+FORD,Dodge City Precinct 01,U.S. Senate,,Republican,"Roberts, Pat",234,00005A
+FORD,Dodge City Airport,U.S. Senate,,independent,"Orman, Greg",0,00005B
+FORD,Dodge City Airport,U.S. Senate,,Libertarian,"Batson, Randall",0,00005B
+FORD,Dodge City Airport,U.S. Senate,,Republican,"Roberts, Pat",0,00005B
+FORD,Dodge City Industrial Park,U.S. Senate,,independent,"Orman, Greg",0,00005C
+FORD,Dodge City Industrial Park,U.S. Senate,,Libertarian,"Batson, Randall",0,00005C
+FORD,Dodge City Industrial Park,U.S. Senate,,Republican,"Roberts, Pat",0,00005C
+FORD,Dodge City Precinct 03,U.S. Senate,,independent,"Orman, Greg",118,70
+FORD,Dodge City Precinct 03,U.S. Senate,,Libertarian,"Batson, Randall",13,70
+FORD,Dodge City Precinct 03,U.S. Senate,,Republican,"Roberts, Pat",139,70
+FORD,Dodge City Precinct 04,U.S. Senate,,independent,"Orman, Greg",220,00008A
+FORD,Dodge City Precinct 04,U.S. Senate,,Libertarian,"Batson, Randall",38,00008A
+FORD,Dodge City Precinct 04,U.S. Senate,,Republican,"Roberts, Pat",374,00008A
+FORD,Dodge City Excel #1,U.S. Senate,,independent,"Orman, Greg",0,00008B
+FORD,Dodge City Excel #1,U.S. Senate,,Libertarian,"Batson, Randall",0,00008B
+FORD,Dodge City Excel #1,U.S. Senate,,Republican,"Roberts, Pat",0,00008B
+FORD,Dodge City Excel #2,U.S. Senate,,independent,"Orman, Greg",0,00008C
+FORD,Dodge City Excel #2,U.S. Senate,,Libertarian,"Batson, Randall",0,00008C
+FORD,Dodge City Excel #2,U.S. Senate,,Republican,"Roberts, Pat",0,00008C
+FORD,Dodge City Millard,U.S. Senate,,independent,"Orman, Greg",0,00008D
+FORD,Dodge City Millard,U.S. Senate,,Libertarian,"Batson, Randall",0,00008D
+FORD,Dodge City Millard,U.S. Senate,,Republican,"Roberts, Pat",0,00008D
+FORD,Dodge City Precinct 06,U.S. Senate,,independent,"Orman, Greg",456,100
+FORD,Dodge City Precinct 06,U.S. Senate,,Libertarian,"Batson, Randall",30,100
+FORD,Dodge City Precinct 06,U.S. Senate,,Republican,"Roberts, Pat",947,100
+FORD,Dodge Township Ward 3,U.S. Senate,,independent,"Orman, Greg",6,200
+FORD,Dodge Township Ward 3,U.S. Senate,,Libertarian,"Batson, Randall",0,200
+FORD,Dodge Township Ward 3,U.S. Senate,,Republican,"Roberts, Pat",16,200
+FORD,Dodge Township H115,U.S. Senate,,independent,"Orman, Greg",50,120020
+FORD,Dodge Township H115,U.S. Senate,,Libertarian,"Batson, Randall",6,120020
+FORD,Dodge Township H115,U.S. Senate,,Republican,"Roberts, Pat",127,120020
+FORD,Dodge Township H119 A,U.S. Senate,,independent,"Orman, Greg",0,12003A
+FORD,Dodge Township H119 A,U.S. Senate,,Libertarian,"Batson, Randall",0,12003A
+FORD,Dodge Township H119 A,U.S. Senate,,Republican,"Roberts, Pat",1,12003A
+FORD,Dodge Township H119,U.S. Senate,,independent,"Orman, Greg",5,120030
+FORD,Dodge Township H119,U.S. Senate,,Libertarian,"Batson, Randall",0,120030
+FORD,Dodge Township H119,U.S. Senate,,Republican,"Roberts, Pat",30,120030
+FORD,Dodge City Precinct 03 H115,U.S. Senate,,independent,"Orman, Greg",0,120100
+FORD,Dodge City Precinct 03 H115,U.S. Senate,,Libertarian,"Batson, Randall",0,120100
+FORD,Dodge City Precinct 03 H115,U.S. Senate,,Republican,"Roberts, Pat",0,120100
+FORD,Dodge City Township C H115,U.S. Senate,,independent,"Orman, Greg",0,120110
+FORD,Dodge City Township C H115,U.S. Senate,,Libertarian,"Batson, Randall",0,120110
+FORD,Dodge City Township C H115,U.S. Senate,,Republican,"Roberts, Pat",0,120110
+FORD,Dodge City Township W H119,U.S. Senate,,independent,"Orman, Greg",0,120120
+FORD,Dodge City Township W H119,U.S. Senate,,Libertarian,"Batson, Randall",0,120120
+FORD,Dodge City Township W H119,U.S. Senate,,Republican,"Roberts, Pat",0,120120
+FORD,Dodge City Precinct 09,U.S. Senate,,independent,"Orman, Greg",2,120130
+FORD,Dodge City Precinct 09,U.S. Senate,,Libertarian,"Batson, Randall",0,120130
+FORD,Dodge City Precinct 09,U.S. Senate,,Republican,"Roberts, Pat",3,120130
+FORD,Dodge City Precinct 10,U.S. Senate,,independent,"Orman, Greg",0,120140
+FORD,Dodge City Precinct 10,U.S. Senate,,Libertarian,"Batson, Randall",0,120140
+FORD,Dodge City Precinct 10,U.S. Senate,,Republican,"Roberts, Pat",0,120140
+FORD,Dodge City Precinct 02,U.S. Senate,,independent,"Orman, Greg",83,130010
+FORD,Dodge City Precinct 02,U.S. Senate,,Libertarian,"Batson, Randall",14,130010
+FORD,Dodge City Precinct 02,U.S. Senate,,Republican,"Roberts, Pat",133,130010
+FORD,Dodge City Precinct 05,U.S. Senate,,independent,"Orman, Greg",352,130020
+FORD,Dodge City Precinct 05,U.S. Senate,,Libertarian,"Batson, Randall",39,130020
+FORD,Dodge City Precinct 05,U.S. Senate,,Republican,"Roberts, Pat",714,130020
+FORD,Dodge City Precinct 07,U.S. Senate,,independent,"Orman, Greg",17,600010
+FORD,Dodge City Precinct 07,U.S. Senate,,Libertarian,"Batson, Randall",1,600010
+FORD,Dodge City Precinct 07,U.S. Senate,,Republican,"Roberts, Pat",37,600010
+FORD,Dodge City Precinct 08,U.S. Senate,,independent,"Orman, Greg",0,800010
+FORD,Dodge City Precinct 08,U.S. Senate,,Libertarian,"Batson, Randall",0,800010
+FORD,Dodge City Precinct 08,U.S. Senate,,Republican,"Roberts, Pat",0,800010
