@@ -39,42 +39,31 @@
     II. Requirements Doc
         1. Representation
 
-          A. Overview: Formatted descriptive text with embedded images, hyperlinks, and minimally interactive maps.
+          A. Census Tract: Colored choropleth depicting various demographics
 
-          B. Basemap: Low opacity continental United States state boundaries. States and cities of interest bold and saturated.
+          B. Basemap: lightly colored mapbox/leaflet basemap, appropriate for overlaid choropleth
 
-          C. Cities: Point symbols with labels, highlighted as affordance to click.
+          C. Cities: Each focus city will have a clear outline of its boundaries within the county it resides in
 
-          D. Polling Wards: Stylized lines with complementarily stylized labels for before and after laws were enacted
+          D. Polling Places: stylized point symbols overlaying choropleth
 
-          E. Election results: Fill color of enumerated areas corresponding to winning political party.
-          ???Voter turnout as transparency (four or five classes)???
-          ???Proportional symbols???
-          ???Dot density since user cannot zoom in (avoid ecological fallacy)???
+          E. Election results: static image of the last election which will be a choropleth map of census tracts made in arc, covering the same extent as the leaflet map. Traditional red/blue will be used to signify party victories
 
-          F. Timeline: Horizontal accordion or mosaic of thumbnails to click on.
-          Timeline title situated above timeline and scale of years situated below.
+          H. Legend: Corresponding Legend for choropleth levels and icon definition of polling place
 
-          G. Demographic Information: Choropleth layer of counties depicting black population per capita of district in Atlanta
-
-          H. Legend: On map??? Regardless of location, user should not have to look for it. Will depict definition of symbols and color ramps used on maps
-
-          I. Side Panel: Collapsible block with text and hyperlinks with details and context.
+          I. (Wish-List Exploratory Country Map): Basic exploratory map, choropleth of states depicting their respective voter ID law strictness
 
 
         2. Interaction
 
-          A. Information panel: User must acknowledge an info panel which provides guidance for website use. They "acknowledge" the panel by exiting out of it.
+          A. Scroll: Constrained Zoom - User can scroll zoom in and out of article's leaflet maps, however will be limited to just the metropolitan area
+                     Scroll for Text - User can scroll up and down for scrolly-telling if cursor is off map
 
-          B. Scroll: Zoom - As user scrolls down webpage past the first map, a national-scale map zooms into 1 of 3 case study cities from story to provide geographic context for the user.
+          B. Constrained Pan: User can directly manipulate the map via dragging, however panning will be limited to metropolitan area
 
-          C. Historical image grid: Retrieve - User clicks on a historical image to learn more about the city's history of voting. An information panel will appear and the photo will be enlarged.
+          B. Tract/Polling-Place Selection: Retrieve - User selects a polling place or census tract which will then identify the polling place's name/address, and the census tract will identify the tract's various non-white population percentage
 
-          D. Map Slider: Sequence - User can move a slider overlaid onto the map to spatially view how voting wards were changed between two years.
-
-          E. Timeline: Sequence - User can sequence through a timeline using buttons or direct manipulation to see voter turnout at different points in time.
-
-          F. State Selection: Retrieve - User selects a state and is presented with data on voter turnout from that state.
+          C. (Wish-List Exploratory State Selection: Retrieve - Clicking a state will open a pop-up describing the state's Voter ID law)
 
     III. Wireframes
       ![wireframe_01](/wireframe_1-01.png)
