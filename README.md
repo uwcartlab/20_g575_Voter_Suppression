@@ -8,13 +8,9 @@
 ### Draft Proposal
     I. Persona/Scenario
         1. Persona
-        The prototypical user of our interactive tool about voter suppression would be from the general public.
-        Such a hypothetical user would not usually be concerned with the politics of voter accessibility, but would be concerned with them after learning about various restrictive laws.  
-        Being of the general U.S. public, the user would encounter our tool online, as in a case of reading an online news article or scrolling on a social media site.  
-        Familiar interfaces, like common social media websites and desktop applications, constitute the bulk of the user's technology exposure.   
-        After being presented with important background overview knowledge about voting restrictions, the main goal would be to learn about the current state of voting restriction in the U.S.   
-        Certain objectives pertaining to this goal include identifying which places have restrictive laws and policies, comparing places (e.g. user's home state vs. neighboring state) by number and type of restrictive laws, and delineating spikes of restrictive laws through time, simultaneously comparing time periods (e.g. 2020 vs. 2000) with each other.   
-        Our persona would preferably have more questions after evaluating this information, like how to act against voter suppression.
+        Gina is a college educated United States citizen. She works as a county clerk, so she is somewhat familiar with different types of voter suppression. She is also aware of the history of voter suppression in the US.
+        Gina concerns herself with voting rights, being a county clerk. In order to learn about the current voting climate in the United States, she researches to answer some questions and find out how to advocate for voters. Some of these questions are about the accessibility of polling locations for different demographic groups in different location and the different laws and regulations that contribute or hinder accessibility. That is, Gina wishes to compare different places based on the laws that they have, identify where people can vote, and correlate voting locations and voting laws with where different people live.  
+        She experienced a number of online interfaces before, including ones with maps. She knows what to look for and is expecting some level of interactivity to retrieve information on places she's concerned with most but is also looking for a succinct site that will situate her county within the current condition of voter suppression across the country.
 
 
         2. Scenario
