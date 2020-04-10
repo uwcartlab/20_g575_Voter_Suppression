@@ -35,29 +35,29 @@
     II. Requirements Doc
         1. Representation
 
-          A. Census Tract: Colored choropleth depicting various demographics
+          A. Census Tract: Colored choropleth depicting various demographic data.
 
-          B. Basemap: lightly colored mapbox/leaflet basemap, appropriate for overlaid choropleth
+          B. Basemap: Lightly colored mapbox/leaflet basemap, appropriate for overlaid choropleth.
 
-          C. Cities: Each focus city will have a clear outline of its boundaries within the county it resides in
+          C. Cities: Each focus city will have a clear outline of its boundaries within the county it resides in.
 
-          D. Polling Places: stylized point symbols overlaying choropleth
+          D. Polling Places: Stylized point symbols overlaying choropleth.
 
-          E. Election results: static image of the last election which will be a choropleth map of census tracts made in arc, covering the same extent as the leaflet map. Traditional red/blue will be used to signify party victories
+          E. Election results: Choropleth zoomable map covering the same extent as the basemap. Traditional red and blue colors will be used to signify party victories.
 
-          H. Legend: Corresponding Legend for choropleth levels and icon definition of polling place
+          H. Legend: Corresponding Legend for choropleth levels and icon definition of polling place. Wish to make the legend scented and highlight corresponding census tracts with legend levels.
 
-          I. (Wish-List Exploratory Country Map): Basic exploratory map, choropleth of states depicting their respective voter ID law strictness
+          I. (Wish-List Exploratory Country Map): Basic exploratory map, choropleth of states depicting their respective voter ID law strictness.
 
 
         2. Interaction
 
-          A. Scroll: Constrained Zoom - User can scroll zoom in and out of article's leaflet maps, however will be limited to just the metropolitan area
-                     Scroll for Text - User can scroll up and down for scrolly-telling if cursor is off map
+          A. Scroll: Constrained Zoom - User can scroll zoom in and out of article's leaflet maps, however will be limited to just the metropolitan area.
+                     Scroll for Text - User can scroll up and down for scrolly-telling if cursor is off map.
 
-          B. Constrained Pan: User can directly manipulate the map via dragging, however panning will be limited to metropolitan area
+          B. Constrained Pan: User can directly manipulate the map via dragging, however panning will be limited to the metropolitan area.
 
-          B. Tract/Polling-Place Selection: Retrieve - User selects a polling place or census tract which will then identify the polling place's name/address, and the census tract will identify the tract's various non-white population percentage
+          B. Tract/Polling-Place Selection: Retrieve - User selects a polling place or census tract. A popup will then display the polling place's name and address, and clicking on the census tract will trigger a popup with the tract's various non-white population percentage.
 
           C. (Wish-List Exploratory State Selection: Retrieve - Clicking a state will open a pop-up describing the state's Voter ID law)
 
