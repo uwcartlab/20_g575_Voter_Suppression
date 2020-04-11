@@ -14,8 +14,8 @@
 
 
         2. Scenario
-        The user experience begins with an enticing landing page showing a descriptive title, a provocative background image, video, or graphic, and a description of the websites' purpose to kickoff a longform overview.   
-        This first part would present three different cities (Atlanta, Austin, and Dodge City,KS) to facilitate the fulfillment of comparison objectives.   
+        Gina first encounters the title to the website,    . There is also a provocative background image, video, or graphic, and a description of the websites' purpose to kickoff a longform overview.   
+        Scrolling down, she reads through a story about how restrictive voter laws exist in some places of the United States. After this chunk, the  first part would present three different cities (Atlanta, Austin, and Dodge City,KS) to facilitate the fulfillment of comparison objectives.   
         While scrolling, the user would be introduced to some of the operators in the exploratory segment of the interface.   
         For example, while learning about the photo ID requirements of Atlanta, vibrant affordances would invite the user to toggle between overlays.   
         One could be a choropleth map depicting the outcome of a particular election while the other could be the basemap with city polling locations.   
