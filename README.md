@@ -14,22 +14,12 @@
 
 
         2. Scenario
-        Gina first encounters the title to the website,    . There is also a provocative background image, video, or graphic, and a description of the websites' purpose to kickoff a longform overview.   
-        Scrolling down, she reads through a story about how restrictive voter laws exist in some places of the United States. After this chunk, the  first part would present three different cities (Atlanta, Austin, and Dodge City,KS) to facilitate the fulfillment of comparison objectives.   
-        While scrolling, the user would be introduced to some of the operators in the exploratory segment of the interface.   
-        For example, while learning about the photo ID requirements of Atlanta, vibrant affordances would invite the user to toggle between overlays.   
-        One could be a choropleth map depicting the outcome of a particular election while the other could be the basemap with city polling locations.   
-        Several cities would be available for zooming into for more information.   
-        The user would explore these after the scrolling portion of the site.   
-        Zooming into these cities would provide context to the user such as the specific types of laws proposed and passed by our cities of interest.   
-        Side panels with explanatory text and hyperlinks to further reading would be available in the event of the user becoming particularly interested with a specific city.   
-        Some of the text contain supplementary images or videos.   
-        Zooming out could assist the user in finding spatial clusters of cities with similar types of laws.   
-        The three types of laws the user could explore would be voter ID laws, voter registration laws, and early/absentee voting laws.   
-        Lastly, the overview map, which is at the national scale, would highlight states relevant to the narrative.   
-        However, upon clicking a state, the map would not zoom in like in the case of clicking on a city, but a side panel would still appear.   
-        After looking through some of these features, the user would toggle "No restrictive laws", click on Philadelphia, and read through the text to contrast it with the situation in Memphis.   
-        The user would exit the site with a better understanding of how and why places institute and dismantle restrictive voter laws.
+        While on her laptop, Gina first encounters the title to the website,    . There is also a provocative background image, video, or graphic, and a description of the websites' purpose to kickoff a longform overview.   
+        Scrolling down, she reads through a story about how restrictive voter laws exist in some places of the United States. After this chunk, a heading for Atlanta, GA appears. Gina notices a map below the city name and proceeds to interact. She sees that polling locations in Atlanta are displayed on the map as are the nonwhite population proportions based on the legend. Generally reading in a brief moment, she looks for correlations between the demographics and the polling locations. She notices that census tracts are higlighted as she scrolls over them and clicks on the ones she's interested in. The map responds by displaying a popup with details such as the census tract number and the exact demographic makeup.
+        After identifying the locations of some of the polling places, she compares the relative distances of the census tracts relative to them. The legend has checkboxes showing which of the available overlays are visible. She toggles the 2016 election outcome to see the census tracts by the candidate with the most votes in that tract.
+        She leaves the map and reads some explanatory text speaking to the specific voting situation of Atlanta, the types of restrictive and enabling laws that exist there, and the generalities of the country's voting restrictions that pertain to it.
+        After skimming through the rest of the cities, such as Austin, she reaches a conclusion. There is text explaining that laws and policies play a major role in voter suppression. To illustrate the scale of this phenomenon, there is one last map that shows the whole country. It is a bivariate choropleth map, with one variable being the presence of various photo ID requirements and the other being affidavit requirements. She reads it and takes note of the status of a few states, associating the laws of a few of the states with the example cities shown prior.
+
 
 
     II. Requirements Doc
