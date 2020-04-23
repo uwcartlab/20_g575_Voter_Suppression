@@ -1,0 +1,52 @@
+Name,Abbreviation,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement
+Alabama,AL,2016,None,
+Alaska,AK,2015,Early Voting,
+Arizona,AZ,2002,Early Voting,Strict Proof of Identity
+Arkansas,AR,,Early Voting,
+California,CA,2012,Early Voting,None
+Colorado,CO,2010,All-mail with EV options,
+Connecticut,CT,2014,None,
+Delaware,DE,2014,"Enacted EV, not implemented",
+District of Columbia,DC,2015,Early Voting,None
+Florida,FL,2017,Early Voting,
+Geogria,GA,2014,Early Voting,Strict Photo ID
+Hawaii,HI,2015,All-mail with EV options,
+Idaho,ID,2017,In-person absentee,
+Illinois,IL,2014,Early Voting,None
+Indiana,IN,2010,In-person absentee,Strict Photo ID
+Iowa,IA,2016,In-person absentee,
+Kansas,KS,2009,In-person absentee,Strict Photo ID
+Kentucky,KY,2016,None,
+Louisiana,LA,2010,Early Voting,
+Maine,ME,,In-person absentee,None
+Maryland,MD,2012,Early Voting,None
+Massachusetts,MA,2015,Early Voting,None
+Michigan,MI,2019,In-person absentee,
+Minnesota,MN,2013,In-person absentee,None
+Mississippi,MS,,None,Strict Photo ID
+Missouri,MO,2014,None,
+Montana,MT,,In-person absentee,
+Nebraska,NE,2015,Early Voting,None
+Nevada,NV,2012,Early Voting,None
+New Hampshire,NH,,None,
+New Jersey,NJ,,In-person absentee,None
+New Mexico,NM,2016,Early Voting,None
+New York,NY,2011,Early Voting,None
+North Carolina,NC,,Early Voting,None
+North Dakota,ND,,Early Voting,Strict Proof of Identity
+Ohio,OH,2017,In-person absentee,Strict Proof of Identity
+Oklahoma,OK,2018,In-person absentee,
+Oregon,OR,2010,All-mail with EV options,None
+Pennsylvania,PA,2015,None,None
+Rhode Island,RI,2017,None,
+South Carolina,SC,2012,None,
+South Dakota,SD,,In-person absentee,
+Tennessee,TN,2017,Early Voting,Strict Photo ID
+Texas,TX,,Early Voting,
+Utah,UT,2010,All-mail with EV options,
+Vermont,VT,2015,In-person absentee,None
+Virginia,VA,2013,In-person absentee,Strict Photo ID
+Washington,WA,2008,All-mail with EV options,
+West Virginia,WV,2015,Early Voting,
+Wisconsin,WI,2017,In-person absentee,Strict Photo ID
+Wyoming,WY,,In-person absentee,None
