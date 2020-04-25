@@ -23,7 +23,11 @@
 } */
 
 .panel-heading {
-  padding-left: 10px;
+  background-image: linear-gradient(to bottom, #045a8d 0, #2b8cbe 100%) !important;
+}
+
+.panel-title {
+  color: white;
 }
 
 

@@ -5,24 +5,96 @@
         <meta name="viewport" content="width=device-width">
             <title></title>
 
-        <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css">
-        <!--[if IE<9]>
-            <link rel="stylesheet" href="css/style.ie.css">
-        <![endif]-->
+            <!--P O T E N T I A L  F O N T S-->
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gotu">
 
-         <!--you can also place internal styles here;
-             place these within <style> tags-->
-        
+          <!-- PROJECT STYLE SHEETS-->
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+          <!-- <link rel="stylesheet" href="css/style.css"> -->
+          <link rel="stylesheet" href="css/style2.css">
+
     </head>
 
     <body>
-        <!--put your initial page content here-->
+        <!--WEBSITE TITLE AND AUTHORSHIP-->
+        <header class="header">
+
+            <h1 id="headerText">American Elections <em>(working title)</em></h1>
+            <h5 id="subheaderText">Created by: Chris Archuleta, Regan Murray, and Michael Biehl</h5>
+
+        </header>
+
+        <div class="row">
+
+          <!-- ACCORDION LEGEND -->
+          <div class="panel-group" id="accordion">
+
+              <!-- ACCORDION SECTION 1 -->
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">LEGEND</a>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+
+                      <p class="SubText">LEGEND CONTENT
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- ACCORDION SECTION 2 -->
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">LEGEND</a>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                      <p class="SubText">LEGEND CONTENT
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- ACCORDION SECTION 3 -->
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">LEGEND</a>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                      <p class="SubText">LEGEND CONTENT
+                      </p>
+                    </div>
+                  </div>
+              </div>
+
+
+
+
+          <div class="mapContainer">
+
+          </div>
+
+        </div>
+
+
 
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
 
         <!--put your external script links here-->
+        <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="lib/d3/d3.js"></script>
+        <script type="text/javascript" src="lib/topojson.js"></script>
+        <script type="text/javascript" src="lib/bootstrap.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
