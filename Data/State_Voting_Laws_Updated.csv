@@ -1,52 +1,52 @@
-Name,Abbreviation,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement
-Alabama,AL,2016,None,Photo ID Requested
-Alaska,AK,2015,Early Voting,ID Requested (General)
-Arizona,AZ,2002,Early Voting,Strict Proof of Identity
-Arkansas,AR,,Early Voting,Photo ID Requested
-California,CA,2012,Early Voting,None
-Colorado,CO,2010,All-mail with EV options,ID Requested (General)
-Connecticut,CT,2014,None,ID Requested (General)
-Delaware,DE,2014,"Enacted EV, not implemented",ID Requested (General)
-District of Columbia,DC,2015,Early Voting,None
-Florida,FL,2017,Early Voting,Photo ID Requested
-Geogria,GA,2014,Early Voting,Strict Photo ID
-Hawaii,HI,2015,All-mail with EV options,ID Requested (General)
-Idaho,ID,2017,In-person absentee,Photo ID Requested
-Illinois,IL,2014,Early Voting,None
-Indiana,IN,2010,In-person absentee,Strict Photo ID
-Iowa,IA,2016,In-person absentee,ID Requested (General)
-Kansas,KS,2009,In-person absentee,Strict Photo ID
-Kentucky,KY,2016,None,ID Requested (General)
-Louisiana,LA,2010,Early Voting,Ph
-Maine,ME,,In-person absentee,None
-Maryland,MD,2012,Early Voting,None
-Massachusetts,MA,2015,Early Voting,None
-Michigan,MI,2019,In-person absentee,Ph
-Minnesota,MN,2013,In-person absentee,None
-Mississippi,MS,,None,Strict Photo ID
-Missouri,MO,2014,None,ID Requested (General)
-Montana,MT,,In-person absentee,ID Requested (General)
-Nebraska,NE,2015,Early Voting,None
-Nevada,NV,2012,Early Voting,None
-New Hampshire,NH,,None,ID Requested (General)
-New Jersey,NJ,,In-person absentee,None
-New Mexico,NM,2016,Early Voting,None
-New York,NY,2011,Early Voting,None
-North Carolina,NC,,Early Voting,None
-North Dakota,ND,,Early Voting,Strict Proof of Identity
-Ohio,OH,2017,In-person absentee,Strict Proof of Identity
-Oklahoma,OK,2018,In-person absentee,ID Requested (General)
-Oregon,OR,2010,All-mail with EV options,None
-Pennsylvania,PA,2015,None,None
-Rhode Island,RI,2017,None,Photo ID Requested
-South Carolina,SC,2012,None,Photo ID Requested
-South Dakota,SD,,In-person absentee,Photo ID Requested
-Tennessee,TN,2017,Early Voting,Strict Photo ID
-Texas,TX,,Early Voting,Photo ID Requested
-Utah,UT,2010,All-mail with EV options,ID Requested (General)
-Vermont,VT,2015,In-person absentee,None
-Virginia,VA,2013,In-person absentee,Strict Photo ID
-Washington,WA,2008,All-mail with EV options,ID Requested (General)
-West Virginia,WV,2015,Early Voting,ID Requested (General)
-Wisconsin,WI,2017,In-person absentee,Strict Photo ID
-Wyoming,WY,,In-person absentee,None
+Name,Abbreviation,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons
+Alabama,AL,2016,None,Photo ID Requested,No,Strictest
+Alaska,AK,2015,Early Voting,ID Requested (General),No,Until Sentence Complete
+Arizona,AZ,2002,Early Voting,Strict Proof of Identity,Yes,Strictest
+Arkansas,AR,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete
+California,CA,2012,Early Voting,None,Yes,Until Sentence Complete
+Colorado,CO,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated
+Connecticut,CT,2014,None,ID Requested (General),No,Until Sentence Complete
+Delaware,DE,2014,"Enacted EV, not implemented",ID Requested (General),No,Strictest
+District of Columbia,DC,2015,Early Voting,None,No,When Incarcerated
+Florida,FL,2017,Early Voting,Photo ID Requested,No,Strictest
+Geogria,GA,2014,Early Voting,Strict Photo ID,No,Until Sentence Complete
+Hawaii,HI,2015,All-mail with EV options,ID Requested (General),Yes,When Incarcerated
+Idaho,ID,2017,In-person absentee,Photo ID Requested,No,Until Sentence Complete
+Illinois,IL,2014,Early Voting,None,No,When Incarcerated
+Indiana,IN,2010,In-person absentee,Strict Photo ID,Yes,When Incarcerated
+Iowa,IA,2016,In-person absentee,ID Requested (General),Sometimes,Strictest
+Kansas,KS,2009,In-person absentee,Strict Photo ID,Yes,Until Sentence Complete
+Kentucky,KY,2016,None,ID Requested (General),No,Strictest
+Louisiana,LA,2010,Early Voting,Photo ID Requested,No,Until Sentence Complete
+Maine,ME,,In-person absentee,None,No,Never
+Maryland,MD,2012,Early Voting,None,No,When Incarcerated
+Massachusetts,MA,2015,Early Voting,None,No,When Incarcerated
+Michigan,MI,2019,In-person absentee,Photo ID Requested,No,When Incarcerated
+Minnesota,MN,2013,In-person absentee,None,No,Until Sentence Complete
+Mississippi,MS,,None,Strict Photo ID,No,Strictest
+Missouri,MO,2014,None,ID Requested (General),No,Until Sentence Complete
+Montana,MT,,In-person absentee,ID Requested (General),No,When Incarcerated
+Nebraska,NE,2015,Early Voting,None,No,Strictest
+Nevada,NV,2012,Early Voting,None,Yes,When Incarcerated
+New Hampshire,NH,,None,ID Requested (General),No,When Incarcerated
+New Jersey,NJ,,In-person absentee,None,No,Until Sentence Complete
+New Mexico,NM,2016,Early Voting,None,Yes,Until Sentence Complete
+New York,NY,2011,Early Voting,None,No,Until Sentence Complete
+North Carolina,NC,,Early Voting,None,No,Until Sentence Complete
+North Dakota,ND,,Early Voting,Strict Proof of Identity,Yes,When Incarcerated
+Ohio,OH,2017,In-person absentee,Strict Proof of Identity,No,When Incarcerated
+Oklahoma,OK,2018,In-person absentee,ID Requested (General),No,Until Sentence Complete
+Oregon,OR,2010,All-mail with EV options,None,No,When Incarcerated
+Pennsylvania,PA,2015,None,None,No,When Incarcerated
+Rhode Island,RI,2017,None,Photo ID Requested,No,When Incarcerated
+South Carolina,SC,2012,None,Photo ID Requested,No,Until Sentence Complete
+South Dakota,SD,,In-person absentee,Photo ID Requested,Yes,Until Sentence Complete
+Tennessee,TN,2017,Early Voting,Strict Photo ID,Yes,Strictest
+Texas,TX,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete
+Utah,UT,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated
+Vermont,VT,2015,In-person absentee,None,No,Never
+Virginia,VA,2013,In-person absentee,Strict Photo ID,No,Strictest
+Washington,WA,2008,All-mail with EV options,ID Requested (General),No,Until Sentence Complete
+West Virginia,WV,2015,Early Voting,ID Requested (General),No,Until Sentence Complete
+Wisconsin,WI,2017,In-person absentee,Strict Photo ID,No,Until Sentence Complete
+Wyoming,WY,,In-person absentee,None,Yes,Strictest
