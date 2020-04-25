@@ -6,7 +6,12 @@
 
 
 
-
+/* PARAGRAPH STYLES */
+.paragraph {
+  font-family: Quicksand;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 
 /* B O D Y */
