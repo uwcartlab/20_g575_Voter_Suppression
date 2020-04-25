@@ -1,6 +1,7 @@
 /* HEADER STYLES */
 .header {
   font-family: Quicksand;
+  text-align: center;
 }
 
 
@@ -8,13 +9,28 @@
 
 
 
+/* B O D Y */
 
+.map-row::after {
+  content: "";
+  clear: both;
+  display: flex;
+}
 
+.legend-column {
+  float: left;
+  padding-top: 20px;
+}
+
+.map-column {
+  float: right;
+  text-align: center;
+}
 
 /* ACCORDION LEGEND */
 
 #accordion {
-  width: 30%;
+  width: 30vw;
   padding-left: 10px;
 }
 
@@ -35,15 +51,16 @@
 
 /* MAP STYLES */
 .map {
-  border: medium solid red;
+  border: medium solid white;
   margin: 10px 0 0 20px;
   /* background-color: #1A1A1A; */
   background-color: #fff;
   position: relative;
   float: right;
   flex: 75%;
-  width: 70vw;
+  width: 67vw;
   overflow-x: scroll;
+  bottom: 10px;
 }
 
 .states {
@@ -54,9 +71,10 @@
 }
 
 .lakes {
-  fill: #737CA1;
+  fill: #2b8cbe;
   stroke: #737CA1;
   stroke-width: .5px;
+  opacity: 95%;
 }
 
 

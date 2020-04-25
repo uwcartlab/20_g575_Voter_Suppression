@@ -5,11 +5,11 @@ window.onload = setMap();
 function setMap(){
 
     //map frame dimensions
-    var width = 960,
+    var width = 700,
         height = 460;
 
     //create new svg container for the map
-    var map = d3.select("body")
+    var map = d3.select("div.mapContainer")
         .append("svg")
         .attr("class", "map")
         .attr("width", width)
@@ -25,7 +25,7 @@ function setMap(){
 
     //use Promise.all to parallelize asynchronous data loading
     var promises = [];
-    promises.push(d3.csv('data/State_Voting_Laws.csv')); //Load CSV attributes
+    promises.push(d3.csv('data/State_Voting_Laws_Updated.csv')); //Load CSV attributes
     promises.push(d3.json("data/USAFinalProjectTopo.json"));    //load choropleth spatial data
     promises.push(d3.json("data/GreatLakesTopo.json"));         //loads great lakes layers
     Promise.all(promises).then(callback);
