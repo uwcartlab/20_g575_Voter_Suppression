@@ -1,4 +1,4 @@
-Name,Abbreviation,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons,Incorrectly Cast Provisional Vote
+name,StateAbb,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons,Incorrectly Cast Provisional Vote
 Alabama,AL,2016,None,Photo ID Requested,No,Strictest,Does Not Count
 Alaska,AK,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count
 Arizona,AZ,2002,Early Voting,Strict Proof of Identity,Yes,Strictest,Partial Count

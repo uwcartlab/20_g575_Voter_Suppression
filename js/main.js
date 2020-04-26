@@ -41,6 +41,8 @@ function setMap(){
             //examine the results
             console.log(greatLakes);
             console.log(usaStates);
+        // join csv data to GeoJSON data
+        usaStates = joinData(usaStates, csvData);
 
             //add states to map
             var states = map.selectAll(".states")
@@ -60,4 +62,35 @@ function setMap(){
 
     };
 
+};
+
+function joinData(usaStates, csvData){
+    // variables for data join from csv
+    var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote"];
+    // assign csv attributes to GeoJSON with each loop
+    for (var i=0; i<csvData.length; i++){
+        // index states
+        var csvState = csvData[i];
+        // name is joining field
+        var csvKey = csvState.name;
+
+        // loop through GeoJSON states to find correct one
+        for (var a=0; a<usaStates.length; a++){
+            var geojsonProps = usaStates[a].properties,
+                geojsonKey = geojsonProps.name;
+
+            // conditional statement transferring data when names match
+            if (geojsonKey == csvKey){
+                // when condition met, assign attributes and values
+                attrArray.forEach(function(attr){
+                    // make variable equal to csv value
+                    var val = parseFloat(csvState[attr]);
+                    // assign value to GeoJSON
+                    geojsonProps[attr] = val;
+                });
+            };
+
+        };
+    };
+    return usaStates;
 };
