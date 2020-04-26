@@ -70,7 +70,7 @@
 
 .states {
   fill: #25383C;
-  stroke: #000;
+  stroke: red;
   stroke-width: .5px;
   stroke-linecap: round;
 }
