@@ -165,7 +165,7 @@ function highlight(props){
     //     //change FILL highlight method
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
         .transition()
-        .duration(400)
+        .duration(50)
         .style("fill", "#dd1c77"); //highlight color
 };
 
@@ -193,7 +193,7 @@ function dehighlight(props){
                         //FILL DEHIGHLIGHT
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
         .transition()
-        .duration(300)
+        .duration(200)
         .style("fill", function(){
             return getStyle(this, "fill")
         });
