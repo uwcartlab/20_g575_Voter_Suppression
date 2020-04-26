@@ -1,18 +1,22 @@
               /* HEADER STYLES */
 .header {
-  font-family: Quicksand;
+  font-family: IM Fell English;
   text-align: center;
 }
 
-
-
               /* PARAGRAPH STYLES */
+
+.InfoBody {
+  width: 65vw;
+  line-height: 20pt;
+}
+
 .paragraph {
   font-family: Quicksand;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: left;
 }
-
 
               /* M A P  A N D  L E G E N D */
 
@@ -77,16 +81,4 @@
   stroke: #737CA1;
   stroke-width: .5px;
   opacity: 95%;
-}
-
-
-
-/* Information Section Styles */
-.InfoBody {
-  width: 65vw;
-  line-height: 20pt;
-}
-
-.paragraph {
-  text-align: left;
 }
