@@ -1,4 +1,4 @@
-/* HEADER STYLES */
+              /* HEADER STYLES */
 .header {
   font-family: Quicksand;
   text-align: center;
@@ -6,7 +6,7 @@
 
 
 
-/* PARAGRAPH STYLES */
+              /* PARAGRAPH STYLES */
 .paragraph {
   font-family: Quicksand;
   padding-left: 30px;
@@ -14,8 +14,9 @@
 }
 
 
-/* B O D Y */
+              /* M A P  A N D  L E G E N D */
 
+/* Map/Legend Containers */
 .map-row::after {
   content: "";
   clear: both;
@@ -32,8 +33,7 @@
   text-align: center;
 }
 
-/* ACCORDION LEGEND */
-
+/* ACCORDION LEGEND STYLES */
 #accordion {
   width: 30vw;
   padding-left: 10px;
@@ -50,9 +50,6 @@
 .panel-title {
   color: white;
 }
-
-
-
 
 /* MAP STYLES */
 .map {
@@ -84,4 +81,12 @@
 
 
 
-/* BODY STYLES */
+/* Information Section Styles */
+.InfoBody {
+  width: 65vw;
+  line-height: 20pt;
+}
+
+.paragraph {
+  text-align: left;
+}

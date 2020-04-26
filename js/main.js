@@ -147,31 +147,55 @@ function setEnumerationUnits(usaStates, map, path, colorScale){
           });
 
       //dehighlight for stroke
-      var desc = states.append("desc")
-          .text('{"stroke": "#fff", "stroke-width": ".1px"}');
+      // var desc = states.append("desc")
+      //     .text('{"stroke": "#fff", "stroke-width": ".1px"}');
 
       //alternate dehighlight for fill
-      // var desc = states.append("desc")
-      //     .text('{"fill": "blue"}');
+      var desc = states.append("desc")
+          .text('{"fill": "#000"}');
 };
 
 
 function highlight(props){
-                //change STROKE highlight method
+    //             //change STROKE highlight method
+    // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+    //     .style("stroke", "#ffffcc") //highlight color
+    //     .style("stroke-width", "2px"); //highlight width
+
+    //     //change FILL highlight method
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .style("stroke", "#ffffcc") //highlight color
-        .style("stroke-width", "2px"); //highlight width
+        .transition()
+        .duration(400)
+        .style("fill", "#dd1c77"); //highlight color
 };
 
 //function to reset the element style on mouseout
 function dehighlight(props){
-              // STROKE DEHIGHLIGHT
-  var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .style("stroke", function(){
-            return getStyle(this, "stroke")
-        })
-        .style("stroke-width", function(){
-            return getStyle(this, "stroke-width")
+  //             // STROKE DEHIGHLIGHT
+  // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+  //       .style("stroke", function(){
+  //           return getStyle(this, "stroke")
+  //       })
+  //       .style("stroke-width", function(){
+  //           return getStyle(this, "stroke-width")
+  //       });
+  //
+  //   function getStyle(element, styleName){
+  //       var styleText = d3.select(element)
+  //           .select("desc")
+  //           .text();
+  //
+  //       var styleObject = JSON.parse(styleText);
+  //
+  //       return styleObject[styleName];
+  //       };
+
+                        //FILL DEHIGHLIGHT
+    var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+        .transition()
+        .duration(300)
+        .style("fill", function(){
+            return getStyle(this, "fill")
         });
 
     function getStyle(element, styleName){
