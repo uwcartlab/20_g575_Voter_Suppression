@@ -161,6 +161,7 @@ function dehighlight(props){
   //             // STROKE DEHIGHLIGHT
   var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
         .style("stroke-width", "0px");
+  defaultPanel();
   //
   //   function getStyle(element, styleName){
   //       var styleText = d3.select(element)
@@ -215,3 +216,6 @@ function setLabel(props){
 
 
 };
+function defaultPanel() {
+  document.getElementById("retrieveTitle").innerHTML="Default";
+}
