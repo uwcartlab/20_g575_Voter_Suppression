@@ -48,14 +48,16 @@
   border: medium solid red;
   margin: 10px 0 0 20px;
   /* background-color: #1A1A1A; */
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   float: right;
   flex: 75%;
   width: 70vw;
   overflow-x: scroll;
 }
-
+.mapContainer {
+  fill: #ffffff;
+}
 .states {
   fill: #25383C;
   stroke: #000;
@@ -64,8 +66,8 @@
 }
 
 .lakes {
-  fill: #737CA1;
-  stroke: #737CA1;
+  fill: #ffffff;
+  stroke: #ffffff;
   stroke-width: .5px;
 }
 

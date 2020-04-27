@@ -32,6 +32,7 @@ function setMap(){
     promises.push(d3.csv('data/State_Voting_Laws_Updated.csv')); //Load CSV attributes
     promises.push(d3.json("data/USAFinalProjectTopo.json"));    //load choropleth spatial data
     promises.push(d3.json("data/GreatLakesTopo.json"));         //loads great lakes layers
+
     Promise.all(promises).then(callback);
 
     function callback(data){
@@ -97,11 +98,11 @@ function findFill(data){
 
     // DARK BLUE COLOR SCALE
     var colorClasses = [
-        "#f1eef6",
-        "#bdc9e1",
-        "#74a9cf",
-        "#2b8cbe",
-        "#045a8d"
+        "#7da1db",
+        "#5c7aaa",
+        "#2854a5",
+        "#1d2255",
+        "#0d1130"
     ];
 
     if(data.properties.Grade == "A") {
@@ -118,6 +119,7 @@ function findFill(data){
 };
 
 function setEnumerationUnits(usaStates, map, path){
+
     //add states to map
     var states = map.selectAll(".states")
         .data(usaStates)
@@ -128,10 +130,10 @@ function setEnumerationUnits(usaStates, map, path){
         })
         .attr("d", path)
           .on("mouseover", function(d){
-              highlight(d.properties);
+              highlight(d.properties, usaStates);
           })
           .on("mouseout", function(d){
-              dehighlight(d.properties);
+              dehighlight(d.properties, usaStates);
           })
         .attr("fill", function(d) {
           return findFill(d);
@@ -147,18 +149,29 @@ function setEnumerationUnits(usaStates, map, path){
           .text('{"fill": "#000"}');
 };
 
-function highlight(props){
+function highlight(props, usaStates){
     //             //change STROKE highlight method
+    //Call setlabel to create label
+    for(var i =0; i < usaStates.length; i++) {
+      var tempStr = "." + usaStates[i].properties.StateAbb.replace(/\s+/g, '');
+      d3.selectAll(tempStr)
+        .style("opacity", "0.5");
+    }
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
         .style("stroke", "#ffffcc") //highlight color
-        .style("stroke-width", "2px"); //highlight width
-    //Call setlabel to create label
+        .style("stroke-width", "2px")
+        .style("opacity", "1"); //highlight width
     setLabel(props);
 };
 
 //function to reset the element style on mouseout
-function dehighlight(props){
+function dehighlight(props, usaStates){
   //             // STROKE DEHIGHLIGHT
+  for(var i =0; i < usaStates.length; i++) {
+    var tempStr = "." + usaStates[i].properties.StateAbb.replace(/\s+/g, '');
+    d3.selectAll(tempStr)
+      .style("opacity", "1");
+  }
   var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
         .style("stroke-width", "0px");
   defaultPanel();
