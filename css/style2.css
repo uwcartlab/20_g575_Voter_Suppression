@@ -15,7 +15,7 @@
 .InfoBody {
   width: 65vw;
   line-height: 20pt;
-  padding-top: 30vh; /* pushes paragraphs down below map */
+  padding-top: 70vh; /* pushes paragraphs down below map */
 }
 
 .paragraph {
@@ -60,8 +60,10 @@
 }
 
 .retrieveContainer {
-  padding-left: 75vw;
-  padding-top: 25vh;
+  padding-left: 77vw;
+  bottom: 340vh;
+  position: relative;
+  pointer-events: none;
 }
 
 .retrievePanel {
@@ -69,9 +71,11 @@
   background-color: #adadad;
   /*background-image: linear-gradient(to bottom, #980043 0, #df65b0 100%) !important;*/
   position: relative;
-  text-align: center;
+  text-align: left;
   border-radius: 5px;
   font-family: Gotham;
+  padding-left: 5px;
+  pointer-events: none;
 }
 
 
