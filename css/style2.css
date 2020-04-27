@@ -18,6 +18,15 @@
   text-align: left;
 }
 
+#imageTitle {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#embeddedImg {
+  padding-bottom: 40px;
+}
+
               /* M A P  A N D  L E G E N D */
 
 /* Map/Legend Containers */
