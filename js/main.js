@@ -2,8 +2,8 @@
 window.onload = setMap();
 
 // variables for data join from csv
-var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote"];
-var expressed = attrArray[0]; //initial attribute
+var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote", "Rating", "Grade"];
+var expressed = attrArray[7]; //initial attribute
 
 //set up choropleth map
 function setMap(){
@@ -45,11 +45,8 @@ function setMap(){
 
         // join csv data to GeoJSON data
         usaStates = joinData(usaStates, csvData);
-
-        var colorScale = makeColorScale(csvData)
-
         //add enumeration units to the map
-        setEnumerationUnits(usaStates, map, path, colorScale);
+        setEnumerationUnits(usaStates, map, path);
 
         //add great lakes to map
         var lakes = map.append("path")
@@ -68,18 +65,23 @@ function joinData(usaStates, csvData){
         var csvState = csvData[i];
         // name is joining field
         var csvKey = csvState.name;
+        csvKey = csvKey.replace(" ", "_").trim();
 
         // loop through GeoJSON states to find correct one
         for (var a=0; a<usaStates.length; a++){
             var geojsonProps = usaStates[a].properties,
-                geojsonKey = geojsonProps.StateAbb;
+            geojsonKey = geojsonProps.name;
+            geojsonKey = geojsonKey.replace(" ", "_").trim();
 
             // conditional statement transferring data when names match
             if (geojsonKey == csvKey){
                 // when condition met, assign attributes and values
                 attrArray.forEach(function(attr){
-                    // make variable equal to csv value
-                    var val = parseFloat(csvState[attr]);
+                    // make variable equal to csv value, check if float or string
+                    var val = csvState[attr];
+                    if(!isNaN(csvState[attr])) {
+                      val=parseFloat(csvState[attr]);
+                    }
                     // assign value to GeoJSON
                     geojsonProps[attr] = val;
                 });
@@ -91,7 +93,7 @@ function joinData(usaStates, csvData){
 };
 
 //function to create color scale generator
-function makeColorScale(data){
+function findFill(data){
 
     // DARK BLUE COLOR SCALE
     var colorClasses = [
@@ -102,34 +104,20 @@ function makeColorScale(data){
         "#045a8d"
     ];
 
-        // NATURAL BREAKS SCALE
-    //create color scale generator
-    var colorScale = d3.scaleThreshold()
-    .range(colorClasses);
-
-    //build array of all values of the expressed attribute
-    var domainArray = [];
-    for (var i=0; i<data.length; i++){
-    var val = parseFloat(data[i][expressed]);
-    domainArray.push(val);
-    };
-
-    //cluster data using ckmeans clustering algorithm to create natural breaks
-    var clusters = ss.ckmeans(domainArray, 5);
-    //reset domain array to cluster minimums
-    domainArray = clusters.map(function(d){
-    return d3.min(d);
-    });
-    //remove first value from domain array to create class breakpoints
-    domainArray.shift();
-
-    //assign array of last 4 cluster minimums as domain
-    colorScale.domain(domainArray);
-
-    return colorScale;
+    if(data.properties.Grade == "A") {
+      return colorClasses[0];
+    } else if(data.properties.Grade == "B") {
+      return colorClasses[1];
+    } else if(data.properties.Grade =="C") {
+      return colorClasses[2];
+    } else if(data.properties.Grade =="D"){
+      return colorClasses[3];
+    } else {
+      return colorClasses[4];
+    }
 };
 
-function setEnumerationUnits(usaStates, map, path, colorScale){
+function setEnumerationUnits(usaStates, map, path){
     //add states to map
     var states = map.selectAll(".states")
         .data(usaStates)
@@ -144,7 +132,11 @@ function setEnumerationUnits(usaStates, map, path, colorScale){
           })
           .on("mouseout", function(d){
               dehighlight(d.properties);
-          });
+          })
+        .attr("fill", function(d) {
+          return findFill(d);
+        });
+        
 
       //dehighlight for stroke
       // var desc = states.append("desc")
@@ -157,16 +149,9 @@ function setEnumerationUnits(usaStates, map, path, colorScale){
 
 function highlight(props){
     //             //change STROKE highlight method
-    // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-    //     .style("stroke", "#ffffcc") //highlight color
-    //     .style("stroke-width", "2px"); //highlight width
-
-    //     //change FILL highlight method
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .transition()
-        .duration(50)
-        .style("fill", "#dd1c77"); //highlight color
-
+        .style("stroke", "#ffffcc") //highlight color
+        .style("stroke-width", "2px"); //highlight width
     //Call setlabel to create label
     setLabel(props);
 };
@@ -174,13 +159,8 @@ function highlight(props){
 //function to reset the element style on mouseout
 function dehighlight(props){
   //             // STROKE DEHIGHLIGHT
-  // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-  //       .style("stroke", function(){
-  //           return getStyle(this, "stroke")
-  //       })
-  //       .style("stroke-width", function(){
-  //           return getStyle(this, "stroke-width")
-  //       });
+  var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+        .style("stroke-width", "0px");
   //
   //   function getStyle(element, styleName){
   //       var styleText = d3.select(element)
@@ -193,26 +173,26 @@ function dehighlight(props){
   //       };
 
                         //FILL DEHIGHLIGHT
-    var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .transition()
-        .duration(200)
-        .style("fill", function(){
-            return getStyle(this, "fill")
-        });
-
-    function getStyle(element, styleName){
-        var styleText = d3.select(element)
-            .select("desc")
-            .text();
-
-        var styleObject = JSON.parse(styleText);
-
-        return styleObject[styleName];
-        };
-
-    // remove label on dehighlight
-    d3.select(".infolabel")
-        .remove();
+    // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+    //     .transition()
+    //     .duration(200)
+    //     .style("fill", function(){
+    //         return getStyle(this, "fill")
+    //     });
+    //
+    // function getStyle(element, styleName){
+    //     var styleText = d3.select(element)
+    //         .select("desc")
+    //         .text();
+    //
+    //     var styleObject = JSON.parse(styleText);
+    //
+    //     return styleObject[styleName];
+    //     };
+    //
+    // // remove label on dehighlight
+    // d3.select(".infolabel")
+    //     .remove();
 
 };
 
