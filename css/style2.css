@@ -9,6 +9,8 @@
 .InfoBody {
   width: 65vw;
   line-height: 20pt;
+  padding-top: 30vh; /* pushes paragraphs down below map */
+  position: relative;
 }
 
 .paragraph {
@@ -29,11 +31,17 @@
 
               /* M A P  A N D  L E G E N D */
 
-/* Map/Legend Containers */
+/* Map/Legend/Retrieve Containers */
+.map-row {
+  position: absolute;
+  padding-top: 5vh;
+}
+
 .map-row::after {
   content: "";
   clear: both;
   display: flex;
+  position: absolute;
 }
 
 .legend-column {
@@ -42,13 +50,26 @@
 }
 
 .map-column {
-  float: right;
+  float:right;
   text-align: center;
 }
 
-/* ACCORDION LEGEND STYLES */
+.retrieveContainer {
+  padding-left: 80vw;
+  padding-top: 25vh;
+}
+
+.retrievePanel {
+  width: 15vw;
+  background-image: linear-gradient(to bottom, #980043 0, #df65b0 100%) !important;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* LEGEND ACCORDION STYLES */
 #accordion {
-  width: 30vw;
+  width: 23vw;
   padding-left: 10px;
 }
 
@@ -68,14 +89,14 @@
 .map {
   border: medium solid white;
   margin: 10px 0 0 20px;
-  /* background-color: #1A1A1A; */
-  background-color: #fff;
+  background-color: lavender;
+  /* background-color: #fff; */
   position: relative;
   float: right;
   flex: 75%;
   width: 67vw;
   overflow-x: scroll;
-  bottom: 10px;
+  bottom: 25px;
 }
 
 .states {
@@ -90,4 +111,27 @@
   stroke: #737CA1;
   stroke-width: .5px;
   opacity: 95%;
+}
+
+/* RETRIEVE PANEL STYLES */
+
+.infolabel {
+margin: 0 20px 0 0;
+position: absolute;
+height: 75px;
+min-width: 100px;
+color: #fff;
+background-image: linear-gradient(to bottom, #045a8d 0, #2b8cbe 100%) !important;
+border: solid medium #fff;
+padding: 5px 10px;
+top: -75px;
+text-align: center;
+}
+
+.infolabel h1 {
+margin: 0 20px 0 0;
+padding: 0;
+display: inline-block;
+line-height: 1em;
+text-align: center;
 }

@@ -155,7 +155,6 @@ function setEnumerationUnits(usaStates, map, path, colorScale){
           .text('{"fill": "#000"}');
 };
 
-
 function highlight(props){
     //             //change STROKE highlight method
     // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
@@ -167,6 +166,9 @@ function highlight(props){
         .transition()
         .duration(50)
         .style("fill", "#dd1c77"); //highlight color
+
+    //Call setlabel to create label
+    setLabel(props);
 };
 
 //function to reset the element style on mouseout
@@ -208,4 +210,26 @@ function dehighlight(props){
         return styleObject[styleName];
         };
 
+    // remove label on dehighlight
+    // d3.select(".retrievePanel")
+    //     .remove();
+
+};
+
+//function to create dynamic label
+function setLabel(props){
+
+    //Choosing text that appears in label
+    var labelAttribute = "<center><h1>" + props[expressed] + "</h1></center>";
+
+    //create info label div
+    var infolabel = d3.select("div.retrievePanel")
+        .append("retrievePanel")
+        .attr("class", "retrievePanel")
+        .attr("id", props.name.replace(/\s+/g, '') + "_label")
+        .html(labelAttribute);
+
+    var stateName = infolabel.append("div.retrievePanel")
+        .attr("class", "retrievePanel")
+        .html(props.name);
 };
