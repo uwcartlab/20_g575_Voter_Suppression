@@ -96,14 +96,43 @@ function joinData(usaStates, csvData){
 //function to create color scale generator
 function findFill(data){
 
-    // DARK BLUE COLOR SCALE
+    // // DARK BLUE COLOR SCALE
+    // var colorClasses = [
+    //     "#7da1db",
+    //     "#5c7aaa",
+    //     "#2854a5",
+    //     "#1d2255",
+    //     "#0d1130"
+    // ];
+
+    // PURPLE COLOR SCALE
     var colorClasses = [
-        "#7da1db",
-        "#5c7aaa",
-        "#2854a5",
-        "#1d2255",
-        "#0d1130"
+        "#f2f0f7",
+        "#cbc9e2",
+        "#9e9ac8",
+        "#756bb1",
+        "#54278f"
     ];
+
+    // RED COLOR SCALE
+    // var colorClasses = [
+    //     "#fee5d9",
+    //     "#fcae91",
+    //     "#fb6a4a",
+    //     "#de2d26",
+    //     "#a50f15"
+    // ];
+
+    // GREEN COLOR SCALE
+    // var colorClasses = [
+    //     "#edf8e9",
+    //     "#bae4b3",
+    //     "#74c476",
+    //     "#31a354",
+    //     "#006d2c"
+    // ];
+
+
 
     if(data.properties.Grade == "A") {
       return colorClasses[0];
