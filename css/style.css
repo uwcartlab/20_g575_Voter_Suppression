@@ -1,6 +1,10 @@
 /* HEADER STYLES */
-.header {
-  font-family: Quicksand;
+@font-face {
+  font-family: Gotham;
+  src: url(/img/Gotham-Bold.otf);
+}
+.headerText {
+  font-family: Gotham;
 }
 
 

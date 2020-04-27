@@ -226,7 +226,8 @@ function setLabel(props){
   textBox+= "Incorrectly Cast Provisional Vote: " + props["Incorrectly Cast Provisional Vote"] + "<br/>";
 
   document.getElementById("retrieveTitle").innerHTML=textBox;
-
+  d3.select("#retrieveTitle")
+    .style("size", "14pt");
 
 };
 function defaultPanel() {

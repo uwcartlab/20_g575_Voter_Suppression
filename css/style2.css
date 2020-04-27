@@ -1,7 +1,13 @@
               /* HEADER STYLES */
+@font-face {
+  font-family: Gotham;
+  src: url(/img/Gotham-Bold.otf);
+}
+
 .header {
-  font-family: IM Fell English;
+  font-family: Gotham;
   text-align: center;
+  color: black;
 }
 
               /* PARAGRAPH STYLES */
@@ -13,7 +19,7 @@
 }
 
 .paragraph {
-  font-family: Quicksand;
+  font-family: serif;
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
@@ -54,17 +60,20 @@
 }
 
 .retrieveContainer {
-  padding-left: 80vw;
+  padding-left: 75vw;
   padding-top: 25vh;
 }
 
 .retrievePanel {
-  width: 15vw;
-  background-image: linear-gradient(to bottom, #980043 0, #df65b0 100%) !important;
+  width: 20vw;
+  background-color: #adadad;
+  /*background-image: linear-gradient(to bottom, #980043 0, #df65b0 100%) !important;*/
   position: relative;
   text-align: center;
   border-radius: 5px;
+  font-family: Gotham;
 }
+
 
 /* LEGEND ACCORDION STYLES */
 #accordion {
