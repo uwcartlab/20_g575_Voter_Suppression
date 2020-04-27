@@ -10,7 +10,6 @@
   width: 65vw;
   line-height: 20pt;
   padding-top: 30vh; /* pushes paragraphs down below map */
-  position: relative;
 }
 
 .paragraph {

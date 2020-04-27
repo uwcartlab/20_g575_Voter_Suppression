@@ -211,8 +211,8 @@ function dehighlight(props){
         };
 
     // remove label on dehighlight
-    // d3.select(".retrievePanel")
-    //     .remove();
+    d3.select(".infolabel")
+        .remove();
 
 };
 
@@ -224,12 +224,12 @@ function setLabel(props){
 
     //create info label div
     var infolabel = d3.select("div.retrievePanel")
-        .append("retrievePanel")
-        .attr("class", "retrievePanel")
+        .append("infolabel")
+        .attr("class", "infolabel")
         .attr("id", props.name.replace(/\s+/g, '') + "_label")
         .html(labelAttribute);
 
     var stateName = infolabel.append("div.retrievePanel")
-        .attr("class", "retrievePanel")
+        .attr("class", "labelname")
         .html(props.name);
 };
