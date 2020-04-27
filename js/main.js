@@ -136,7 +136,7 @@ function setEnumerationUnits(usaStates, map, path){
         .attr("fill", function(d) {
           return findFill(d);
         });
-        
+
 
       //dehighlight for stroke
       // var desc = states.append("desc")
@@ -199,17 +199,19 @@ function dehighlight(props){
 //function to create dynamic label
 function setLabel(props){
 
-    //Choosing text that appears in label
-    var labelAttribute = "<center><h1>" + props[expressed] + "</h1></center>";
+  //Update retrieve panel inner HTML with hover
+  var textBox = props.name +"<br/>" + "Grade: " + props.Grade + "<br/>";
+  if(isNaN(props["Online Reg Implement Yr"])) {
+    textBox+= "Online Registration: No<br/>";
+  } else {
+    textBox+= "Online Registration: Yes<br/>";
+  };
+  textBox+="Early Voting Status: " + props["Early Voting Status"] + "<br/>" + "Voter ID Requirement: " + props["Voter ID Requirement"] + "<br/>";
+  textBox+= "Election Day Vote Centers: " + props["Election Day Vote Centers"] + "<br/>";
+  textBox+= "Rights Lost to Felons: " + props["Rights Lost to Felons"] + "<br/>";
+  textBox+= "Incorrectly Cast Provisional Vote: " + props["Incorrectly Cast Provisional Vote"] + "<br/>";
 
-    //create info label div
-    var infolabel = d3.select("div.retrievePanel")
-        .append("infolabel")
-        .attr("class", "infolabel")
-        .attr("id", props.name.replace(/\s+/g, '') + "_label")
-        .html(labelAttribute);
+  document.getElementById("retrieveTitle").innerHTML=textBox;
 
-    var stateName = infolabel.append("div.retrievePanel")
-        .attr("class", "labelname")
-        .html(props.name);
+
 };
