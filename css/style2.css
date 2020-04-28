@@ -1,28 +1,18 @@
-              /* HEADER STYLES */
+/* HEADER STYLES */
 @font-face {
   font-family: Gotham;
   src: url(/img/Gotham-Bold.otf);
 }
-
-.header {
+.headerText {
   font-family: Gotham;
-  text-align: center;
-  color: black;
 }
 
-              /* PARAGRAPH STYLES */
 
-.InfoBody {
-  width: 65vw;
-  line-height: 20pt;
-  padding-top: 70vh; /* pushes paragraphs down below map */
-}
-
+/* PARAGRAPH STYLES */
 .paragraph {
-  font-family: serif;
+  font-family: Quicksand;
   padding-left: 30px;
   padding-right: 30px;
-  text-align: left;
 }
 
 #imageTitle {
@@ -34,54 +24,15 @@
   padding-bottom: 40px;
 }
 
-              /* M A P  A N D  L E G E N D */
-
-/* Map/Legend/Retrieve Containers */
-.map-row {
-  position: absolute;
-  padding-top: 5vh;
-}
-
-.map-row::after {
-  content: "";
-  clear: both;
-  display: flex;
-  position: absolute;
-}
-
-.legend-column {
-  float: left;
-  padding-top: 20px;
-}
-
-.map-column {
-  float:right;
-  text-align: center;
-}
-
-.retrieveContainer {
-  padding-left: 77vw;
-  bottom: 340vh;
-  position: relative;
-  pointer-events: none;
-}
-
-.retrievePanel {
-  width: 20vw;
-  background-color: #adadad;
-  /*background-image: linear-gradient(to bottom, #980043 0, #df65b0 100%) !important;*/
-  position: relative;
-  text-align: left;
-  border-radius: 5px;
-  font-family: Gotham;
-  padding-left: 5px;
-  pointer-events: none;
-}
 
 
-/* LEGEND ACCORDION STYLES */
+
+
+
+/* ACCORDION LEGEND */
+
 #accordion {
-  width: 23vw;
+  width: 30%;
   padding-left: 10px;
 }
 
@@ -90,30 +41,30 @@
 } */
 
 .panel-heading {
-  background-image: linear-gradient(to bottom, #54278f 0, #756bb1 100%) !important;
+  padding-left: 10px;
 }
 
-.panel-title {
-  color: white;
-}
+
+
 
 /* MAP STYLES */
 .map {
-  border: medium solid white;
+  border: medium solid red;
   margin: 10px 0 0 20px;
+  /* background-color: #1A1A1A; */
   background-color: #ffffff;
-  /* background-color: #fff; */
   position: relative;
   float: right;
   flex: 75%;
-  width: 67vw;
+  width: 70vw;
   overflow-x: scroll;
-  bottom: 25px;
 }
-
+.mapContainer {
+  fill: #ffffff;
+}
 .states {
   fill: #25383C;
-  stroke: red;
+  stroke: #000;
   stroke-width: .5px;
   stroke-linecap: round;
 }
@@ -122,28 +73,7 @@
   fill: #ffffff;
   stroke: #ffffff;
   stroke-width: .5px;
-  opacity: 100%;
 }
 
-/* RETRIEVE PANEL STYLES */
 
-.infolabel {
-margin: 0 20px 0 0;
-position: absolute;
-height: 75px;
-min-width: 100px;
-color: #fff;
-background-image: linear-gradient(to bottom, #045a8d 0, #2b8cbe 100%) !important;
-border: solid medium #fff;
-padding: 5px 10px;
-top: -75px;
-text-align: center;
-}
-
-.infolabel h1 {
-margin: 0 20px 0 0;
-padding: 0;
-display: inline-block;
-line-height: 1em;
-text-align: center;
-}
+/* BODY STYLES */

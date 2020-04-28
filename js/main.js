@@ -187,7 +187,7 @@ function highlight(props, usaStates){
         .style("opacity", "0.5");
     }
     var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .style("stroke", "#ffffcc") //highlight color
+        .style("stroke", "#00FFFF") //highlight color
         .style("stroke-width", "2px")
         .style("opacity", "1"); //highlight width
     setLabel(props);
@@ -256,7 +256,8 @@ function setLabel(props){
 
   document.getElementById("retrieveTitle").innerHTML=textBox;
   d3.select("#retrieveTitle")
-    .style("size", "14pt");
+    .style("size", "14pt")
+    .style("color", "white"); //retrieve text color
 
 };
 function defaultPanel() {

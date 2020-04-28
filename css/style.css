@@ -1,18 +1,30 @@
-/* HEADER STYLES */
+              /* HEADER STYLES */
 @font-face {
   font-family: Gotham;
   src: url(/img/Gotham-Bold.otf);
 }
-.headerText {
+
+.header {
   font-family: Gotham;
+  text-align: center;
+  color: black;
+  background-color: none;
 }
 
+              /* PARAGRAPH STYLES */
 
-/* PARAGRAPH STYLES */
+.InfoBody {
+  width: 65vw;
+  line-height: 20pt;
+  padding-top: 70vh; /* pushes paragraphs down below map */
+}
+
 .paragraph {
-  font-family: Quicksand;
+  font-family: serif;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: left;
+  color: black;
 }
 
 #imageTitle {
@@ -24,15 +36,55 @@
   padding-bottom: 40px;
 }
 
+              /* M A P  A N D  L E G E N D */
+
+/* Map/Legend/Retrieve Containers */
+.map-row {
+  position: absolute;
+  padding-top: 5vh;
+}
+
+.map-row::after {
+  content: "";
+  clear: both;
+  display: flex;
+  position: absolute;
+}
+
+.legend-column {
+  float: left;
+  padding-top: 20px;
+}
+
+.map-column {
+  float:right;
+  text-align: center;
+}
+
+.retrieveContainer {
+  padding-left: 77vw;
+  bottom: 340vh;
+  position: relative;
+  pointer-events: none;
+}
+
+.retrievePanel {
+  width: 20vw;
+  /* background-color: #adadad; */
+  background-image: linear-gradient(to bottom, #54278f 0, #756bb1 100%) !important;
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
+  font-family: Gotham;
+  padding-left: 5px;
+  pointer-events: none;
+  color: #fff
+}
 
 
-
-
-
-/* ACCORDION LEGEND */
-
+/* LEGEND ACCORDION STYLES */
 #accordion {
-  width: 30%;
+  width: 23vw;
   padding-left: 10px;
 }
 
@@ -41,30 +93,30 @@
 } */
 
 .panel-heading {
-  padding-left: 10px;
+  background-image: linear-gradient(to bottom, #54278f 0, #756bb1 100%) !important;
 }
 
-
-
+.panel-title {
+  color: white;
+}
 
 /* MAP STYLES */
 .map {
-  border: medium solid red;
+  /* border: medium solid white; */
   margin: 10px 0 0 20px;
-  /* background-color: #1A1A1A; */
-  background-color: #ffffff;
+  background-color: none;
+  /* background-color: #fff; */
   position: relative;
   float: right;
   flex: 75%;
-  width: 70vw;
+  width: 67vw;
   overflow-x: scroll;
+  bottom: 25px;
 }
-.mapContainer {
-  fill: #ffffff;
-}
+
 .states {
   fill: #25383C;
-  stroke: #000;
+  stroke: red;
   stroke-width: .5px;
   stroke-linecap: round;
 }
@@ -73,7 +125,152 @@
   fill: #ffffff;
   stroke: #ffffff;
   stroke-width: .5px;
+  opacity: 100%;
+}
+
+/* RETRIEVE PANEL STYLES */
+
+.infolabel {
+margin: 0 20px 0 0;
+position: absolute;
+height: 75px;
+min-width: 100px;
+color: #fff;
+background-image: linear-gradient(to bottom, #045a8d 0, #2b8cbe 100%) !important;
+border: solid medium #fff;
+padding: 5px 10px;
+top: -75px;
+text-align: center;
+}
+
+.infolabel h1 {
+margin: 0 20px 0 0;
+padding: 0;
+display: inline-block;
+line-height: 1em;
+text-align: center;
 }
 
 
-/* BODY STYLES */
+
+/* A N I M A T I O N   S T Y L E S */
+
+.area{
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height:400%;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
