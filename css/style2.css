@@ -7,12 +7,25 @@
   font-family: Gotham;
 }
 
+/* Link colors */
+a:link {
+  color: #54278f;
+}
+
+a:visited {
+  color: #756bb1;
+}
+
 
 /* PARAGRAPH STYLES */
 .paragraph {
   font-family: Quicksand;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+#welcome {
+ font-weight: normal;
 }
 
 #imageTitle {
