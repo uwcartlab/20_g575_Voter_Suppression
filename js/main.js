@@ -183,55 +183,55 @@ function setEnumerationUnits(usaStates, map, path){
           .text('{"fill": "#000"}');
 };
 
-function setLegend() {
-  var x = 20,
-      width = 50,
-      height = 30;
-  var gradeArray = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "F"
-  ];
-  var colorArray = [
-    "#f2f0f7",
-    "#cbc9e2",
-    "#9e9ac8",
-    "#756bb1",
-    "#54278f"
-  ];
-  var legend = d3.select(".panel-body")
-    .append("svg")
-    .attr("width", 350)
-    .attr("height", 300);
-
-  for(var i=0; i<gradeArray.length; i++) {
-    legend.append("rect")
-      .attr("x", x)
-      .attr("y", 50 * (i +1))
-      .attr("width", width)
-      .attr("height", height)
-      .style("fill", colorArray[i]);
-    legend.append("text")
-      .attr("x", x + 2 * width)
-      .attr("y", (50 * (i +1) + 20))
-      .text(gradeArray[i])
-      .attr("font", "Quicksand")
-      .attr("font-size", "20px")
-      .attr("fill", "black");
-  };
-
-  var gradeTitle = legend.append("text")
-    .attr("x", x)
-    .attr("y", 35)
-    .text("Composite Grade")
-    .attr("font", "Quicksand")
-    .attr("font-size", "24px")
-    .attr("fill", "black")
-    .attr("font-weight", "bold");
-};
-setLegend();
+// function setLegend() {
+//   var x = 20,
+//       width = 50,
+//       height = 30;
+//   var gradeArray = [
+//     "A",
+//     "B",
+//     "C",
+//     "D",
+//     "F"
+//   ];
+//   var colorArray = [
+//     "#f2f0f7",
+//     "#cbc9e2",
+//     "#9e9ac8",
+//     "#756bb1",
+//     "#54278f"
+//   ];
+//   var legend = d3.select(".panel-body")
+//     .append("svg")
+//     .attr("width", 350)
+//     .attr("height", 300);
+//
+//   for(var i=0; i<gradeArray.length; i++) {
+//     legend.append("rect")
+//       .attr("x", x)
+//       .attr("y", 50 * (i +1))
+//       .attr("width", width)
+//       .attr("height", height)
+//       .style("fill", colorArray[i]);
+//     legend.append("text")
+//       .attr("x", x + 2 * width)
+//       .attr("y", (50 * (i +1) + 20))
+//       .text(gradeArray[i])
+//       .attr("font", "Quicksand")
+//       .attr("font-size", "20px")
+//       .attr("fill", "black");
+//   };
+//
+//   var gradeTitle = legend.append("text")
+//     .attr("x", x)
+//     .attr("y", 35)
+//     .text("Composite Grade")
+//     .attr("font", "Quicksand")
+//     .attr("font-size", "24px")
+//     .attr("fill", "black")
+//     .attr("font-weight", "bold");
+// };
+// setLegend();
 
 function highlight(props, usaStates){
     //             //change STROKE highlight method

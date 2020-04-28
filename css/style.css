@@ -13,12 +13,17 @@
 
 
 /* Link colors */
-a:link {
-  color: #54278f;
+.externallink {
+  color: #54278f !important;
+  font-weight: bold;
 }
 
-a:visited {
-  color: #756bb1;
+/* a and .externallink {
+  color: #756bb1 !important;
+} */
+
+.overlay {
+  text-decoration: none !important;
 }
 
               /* PARAGRAPH STYLES */
@@ -26,7 +31,8 @@ a:visited {
 .InfoBody {
   width: 65vw;
   line-height: 20pt;
-  padding-top: 70vh; /* pushes paragraphs down below map */
+  padding-top: 75vh; /* pushes paragraphs down below map */
+  padding-left: 2%;
 }
 
 .paragraph {
@@ -55,7 +61,7 @@ a:visited {
 /* Map/Legend/Retrieve Containers */
 .map-row {
   position: absolute;
-  padding-top: 5vh;
+  padding-top: 0vh;
 }
 
 .map-row::after {
@@ -77,7 +83,7 @@ a:visited {
 
 .retrieveContainer {
   padding-left: 77vw;
-  bottom: 340vh;
+  bottom: 387vh; /* pushes retrievePanel up */
   position: relative;
   pointer-events: none;
 }
@@ -99,20 +105,41 @@ a:visited {
 
 /* LEGEND ACCORDION STYLES */
 #accordion {
-  width: 23vw;
+  width: 20vw;
   padding-left: 10px;
 }
 
-/* .panel {
-  padding-left: 20%
+/* #accordion2 {
+  float: right !important;
+  width: 10vw !important;
+  padding-left: 80vw;
+  padding-top: 40vh;
+  position: absolute;
+  pointer-events: fill;
+  z-index: 1;
 } */
+
+#radiobutton {
+  pointer-events:all !important;
+  z-index: 2;
+}
+
+.panel2 {
+  float: right !important;
+  padding-right: 8%;
+  padding-top: 40vh;
+  position: relative;
+  pointer-events: auto;
+  z-index: 1;
+}
 
 .panel-heading {
   background-image: linear-gradient(to bottom, #54278f 0, #756bb1 100%) !important;
+  color: white;
 }
 
 .panel-title {
-  color: white;
+  color: white !important;
   /* pointer-events: none; */
 }
 
