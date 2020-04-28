@@ -265,8 +265,7 @@ function defaultPanel() {
   document.getElementById("retrieveTitle").innerHTML="No State Selected";
 };
 
-function setLegend(colorClasses) {
-  console.log(colorClasses);
+function setLegend() {
   var x = 20,
       width = 50,
       height = 30;
@@ -279,28 +278,74 @@ function setLegend(colorClasses) {
     .attr("y", 10)
     .attr("width", width)
     .attr("height", height)
+    .style("fill", "#f2f0f7");
   var rectB = legend.append("rect")
     .attr("x", x)
     .attr("y", 60)
     .attr("width", width)
     .attr("height", height)
+    .style("fill", "cbc9e2");
   var rectC = legend.append("rect")
     .attr("x", x)
     .attr("y", 110)
     .attr("width", width)
     .attr("height", height)
+    .style("fill", "#9e9ac8");
   var rectD = legend.append("rect")
     .attr("x", x)
     .attr("y", 160)
     .attr("width", width)
     .attr("height", height)
+    .style("fill", "#756bb1");
   var rectF = legend.append("rect")
     .attr("x", x)
     .attr("y", 210)
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .style("fill", "#54278f");
+
+  var textA = legend.append("text")
+    .attr("x", x + 2 * width)
+    .attr("y", 30)
+    .text("A")
+    .attr("font", "Quicksand")
+    .attr("font-size", "20px")
+    .attr("fill", "black");
+
+  var textB = legend.append("text")
+    .attr("x", x + 2 * width)
+    .attr("y", 80)
+    .text("B")
+    .attr("font", "Quicksand")
+    .attr("font-size", "20px")
+    .attr("fill", "black");
+
+    var textC = legend.append("text")
+    .attr("x", x + 2 * width)
+    .attr("y", 130)
+    .text("C")
+    .attr("font", "Quicksand")
+    .attr("font-size", "20px")
+    .attr("fill", "black");
+
+    var textD = legend.append("text")
+    .attr("x", x + 2 * width)
+    .attr("y", 180)
+    .text("D")
+    .attr("font", "Quicksand")
+    .attr("font-size", "20px")
+    .attr("fill", "black");
+
+    var textF = legend.append("text")
+    .attr("x", x + 2 * width)
+    .attr("y", 230)
+    .text("F")
+    .attr("font", "Quicksand")
+    .attr("font-size", "20px")
+    .attr("fill", "black");
+
 
 
 
 };
-setLegend(colorClasses);
+setLegend();
