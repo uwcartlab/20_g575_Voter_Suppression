@@ -53,7 +53,7 @@
 
 .legend-column {
   float: left;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .map-column {
@@ -99,7 +99,7 @@
 
 .panel-title {
   color: white;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 /* MAP STYLES */

@@ -262,7 +262,7 @@ function setLabel(props){
 
 };
 function defaultPanel() {
-  document.getElementById("retrieveTitle").innerHTML="Default";
+  document.getElementById("retrieveTitle").innerHTML="No State Selected";
 };
 
 function setLegend(colorClasses) {
