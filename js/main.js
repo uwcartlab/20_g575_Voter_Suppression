@@ -4,6 +4,7 @@ window.onload = setMap();
 // variables for data join from csv
 var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote", "Rating", "Grade"];
 var expressed = attrArray[7]; //initial attribute
+var colorClasses;
 
 //set up choropleth map
 function setMap(){
@@ -106,7 +107,7 @@ function findFill(data){
     // ];
 
     // PURPLE COLOR SCALE
-    var colorClasses = [
+    colorClasses = [
         "#f2f0f7",
         "#cbc9e2",
         "#9e9ac8",
@@ -133,7 +134,6 @@ function findFill(data){
     // ];
 
 
-
     if(data.properties.Grade == "A") {
       return colorClasses[0];
     } else if(data.properties.Grade == "B") {
@@ -145,6 +145,7 @@ function findFill(data){
     } else {
       return colorClasses[4];
     }
+
 };
 
 function setEnumerationUnits(usaStates, map, path){
@@ -261,5 +262,45 @@ function setLabel(props){
 
 };
 function defaultPanel() {
-  document.getElementById("retrieveTitle").innerHTML=div.defaultPanel;
-}
+  document.getElementById("retrieveTitle").innerHTML="Default";
+};
+
+function setLegend(colorClasses) {
+  console.log(colorClasses);
+  var x = 20,
+      width = 50,
+      height = 30;
+  var legend = d3.select(".panel-body")
+    .append("svg")
+    .attr("width", 350)
+    .attr("height", 260)
+  var rectA = legend.append("rect")
+    .attr("x", x)
+    .attr("y", 10)
+    .attr("width", width)
+    .attr("height", height)
+  var rectB = legend.append("rect")
+    .attr("x", x)
+    .attr("y", 60)
+    .attr("width", width)
+    .attr("height", height)
+  var rectC = legend.append("rect")
+    .attr("x", x)
+    .attr("y", 110)
+    .attr("width", width)
+    .attr("height", height)
+  var rectD = legend.append("rect")
+    .attr("x", x)
+    .attr("y", 160)
+    .attr("width", width)
+    .attr("height", height)
+  var rectF = legend.append("rect")
+    .attr("x", x)
+    .attr("y", 210)
+    .attr("width", width)
+    .attr("height", height);
+
+
+
+};
+setLegend(colorClasses);

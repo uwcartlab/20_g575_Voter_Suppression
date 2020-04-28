@@ -1,52 +1,52 @@
-name,StateAbb,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons,Incorrectly Cast Provisional Vote,,Rating,Grade
-Alabama,AL,2016,None,Photo ID Requested,No,Strictest,Does Not Count,,2,D
-Alaska,AK,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count,,3.5,B
-Arizona,AZ,2002,Early Voting,Strict Proof of Identity,Yes,Strictest,Partial Count,,3.5,B
-Arkansas,AR,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete,Partial Count,,4,B
-California,CA,2012,Early Voting,None,Yes,Until Sentence Complete,Partial Count,,5,A
-Colorado,CO,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Partial Count,,4,B
-Connecticut,CT,2014,None,ID Requested (General),No,Until Sentence Complete,Partial Count,,3,C
-Delaware,DE,2014,"Enacted EV, not implemented",ID Requested (General),No,Strictest,Does Not Count,,2,D
-District of Columbia,DC,2015,Early Voting,None,No,When Incarcerated,,,3,C
-Florida,FL,2017,Early Voting,Photo ID Requested,No,Strictest,Does Not Count,,3,C
-Georgia,GA,2014,Early Voting,Strict Photo ID,No,Until Sentence Complete,Partial Count,,3,C
-Hawaii,HI,2015,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Does Not Count,,4,B
-Idaho,ID,2017,In-person absentee,Photo ID Requested,No,Until Sentence Complete,No Provisional Vote,,3.5,B
-Illinois,IL,2014,Early Voting,None,No,When Incarcerated,Does Not Count,,3,C
-Indiana,IN,2010,In-person absentee,Strict Photo ID,Yes,When Incarcerated,Does Not Count,,3,C
-Iowa,IA,2016,In-person absentee,ID Requested (General),Sometimes,Strictest,Does Not Count,,3.5,B
-Kansas,KS,2009,In-person absentee,Strict Photo ID,Yes,Until Sentence Complete,Partial Count,,4,B
-Kentucky,KY,2016,None,ID Requested (General),No,Strictest,Does Not Count,,2,D
-Louisiana,LA,2010,Early Voting,Photo ID Requested,No,Until Sentence Complete,Partial Count,,4,B
-Maine,ME,,In-person absentee,None,No,Never,Full Count,,4,B
-Maryland,MD,2012,Early Voting,None,No,When Incarcerated,Partial Count,,3.5,B
-Massachusetts,MA,2015,Early Voting,None,No,When Incarcerated,Partial Count,,3.5,B
-Michigan,MI,2019,In-person absentee,Photo ID Requested,No,When Incarcerated,Does Not Count,,3,C
-Minnesota,MN,2013,In-person absentee,None,No,Until Sentence Complete,No Provisional Vote,,3.5,B
-Mississippi,MS,,None,Strict Photo ID,No,Strictest,Does Not Count,,0,F
-Missouri,MO,2014,None,ID Requested (General),No,Until Sentence Complete,Does Not Count,,2.5,C
-Montana,MT,,In-person absentee,ID Requested (General),No,When Incarcerated,Does Not Count,,2,D
-Nebraska,NE,2015,Early Voting,None,No,Strictest,Partial Count,,3.5,B
-Nevada,NV,2012,Early Voting,None,Yes,When Incarcerated,Does Not Count,,4,B
-New Hampshire,NH,,None,ID Requested (General),No,When Incarcerated,No Provisional Vote,,1,F
-New Jersey,NJ,,In-person absentee,None,No,Until Sentence Complete,Partial Count,,3,C
-New Mexico,NM,2016,Early Voting,None,Yes,Until Sentence Complete,Partial Count,,5,A
-New York,NY,2011,Early Voting,None,No,Until Sentence Complete,Partial Count,,4,B
-North Carolina,NC,,Early Voting,None,No,Until Sentence Complete,Does Not Count,,2.5,C
-North Dakota,ND,,Early Voting,Strict Proof of Identity,Yes,When Incarcerated,No Provisional Vote,,2,D
-Ohio,OH,2017,In-person absentee,Strict Proof of Identity,No,When Incarcerated,Partial Count,,2.5,C
-Oklahoma,OK,2018,In-person absentee,ID Requested (General),No,Until Sentence Complete,Does Not Count,,3.5,B
-Oregon,OR,2010,All-mail with EV options,None,No,When Incarcerated,Partial Count,,3.5,B
-Pennsylvania,PA,2015,None,None,No,When Incarcerated,Partial Count,,2.5,C
-Rhode Island,RI,2017,None,Photo ID Requested,No,When Incarcerated,Partial Count,,2.5,C
-South Carolina,SC,2012,None,Photo ID Requested,No,Until Sentence Complete,Does Not Count,,2.5,C
-South Dakota,SD,,In-person absentee,Photo ID Requested,Yes,Until Sentence Complete,Does Not Count,,3.5,B
-Tennessee,TN,2017,Early Voting,Strict Photo ID,Yes,Strictest,Does Not Count,,3,C
-Texas,TX,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete,Does Not Count,,3.5,B
-Utah,UT,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Partial Count,,4.5,A
-Vermont,VT,2015,In-person absentee,None,No,Never,Does Not Count,,4,B
-Virginia,VA,2013,In-person absentee,Strict Photo ID,No,Strictest,Does Not Count,,2,D
-Washington,WA,2008,All-mail with EV options,ID Requested (General),No,Until Sentence Complete,Partial Count,,4,B
-West Virginia,WV,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count,,4,B
-Wisconsin,WI,2017,In-person absentee,Strict Photo ID,No,Until Sentence Complete,Does Not Count,,2.5,C
-Wyoming,WY,,In-person absentee,None,Yes,Strictest,Does Not Count,,3,C
+name,StateAbb,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons,Incorrectly Cast Provisional Vote,,Rating,Grade,Voter Turnout % (2012 General),Voter Turnout % (2016),Change in Voter Turnout %
+Alabama,AL,2016,None,Photo ID Requested,No,Strictest,Does Not Count,,2,D,58.6,58.8,0.2
+Alaska,AK,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count,,3.5,B,58.7,61,2.3
+Arizona,AZ,2002,Early Voting,Strict Proof of Identity,Yes,Strictest,Partial Count,,3.5,B,52.6,54.9,2.3
+Arkansas,AR,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete,Partial Count,,4,B,50.7,52.8,2.1
+California,CA,2012,Early Voting,None,Yes,Until Sentence Complete,Partial Count,,5,A,55.1,56.5,1.4
+Colorado,CO,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Partial Count,,4,B,69.9,70,0.1
+Connecticut,CT,2014,None,ID Requested (General),No,Until Sentence Complete,Partial Count,,3,C,61.3,63.7,2.4
+Delaware,DE,2014,"Enacted EV, not implemented",ID Requested (General),No,Strictest,Does Not Count,,2,D,62.3,64.2,1.9
+District of Columbia,DC,2015,Early Voting,None,No,When Incarcerated,,,3,C,61.5,60.4,-1.1
+Florida,FL,2017,Early Voting,Photo ID Requested,No,Strictest,Does Not Count,,3,C,62.8,64.5,1.7
+Georgia,GA,2014,Early Voting,Strict Photo ID,No,Until Sentence Complete,Partial Count,,3,C,59,59.1,0.1
+Hawaii,HI,2015,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Does Not Count,,4,B,44.2,42.3,-1.9
+Idaho,ID,2017,In-person absentee,Photo ID Requested,No,Until Sentence Complete,No Provisional Vote,,3.5,B,59.8,59.2,-0.6
+Illinois,IL,2014,Early Voting,None,No,When Incarcerated,Does Not Count,,3,C,58.9,62.2,3.3
+Indiana,IN,2010,In-person absentee,Strict Photo ID,Yes,When Incarcerated,Does Not Count,,3,C,55.2,56.4,1.2
+Iowa,IA,2016,In-person absentee,ID Requested (General),Sometimes,Strictest,Does Not Count,,3.5,B,70.3,68.4,-1.9
+Kansas,KS,2009,In-person absentee,Strict Photo ID,Yes,Until Sentence Complete,Partial Count,,4,B,56.9,57.7,0.8
+Kentucky,KY,2016,None,ID Requested (General),No,Strictest,Does Not Count,,2,D,55.7,58.6,2.9
+Louisiana,LA,2010,Early Voting,Photo ID Requested,No,Until Sentence Complete,Partial Count,,4,B,60.2,60,-0.2
+Maine,ME,,In-person absentee,None,No,Never,Full Count,,4,B,68.2,70.7,2.5
+Maryland,MD,2012,Early Voting,None,No,When Incarcerated,Partial Count,,3.5,B,66.6,66.4,-0.2
+Massachusetts,MA,2015,Early Voting,None,No,When Incarcerated,Partial Count,,3.5,B,65.9,67.2,1.3
+Michigan,MI,2019,In-person absentee,Photo ID Requested,No,When Incarcerated,Does Not Count,,3,C,64.7,64.7,0
+Minnesota,MN,2013,In-person absentee,None,No,Until Sentence Complete,No Provisional Vote,,3.5,B,76,74.1,-1.9
+Mississippi,MS,,None,Strict Photo ID,No,Strictest,Does Not Count,,0,F,59.3,55.2,-4.1
+Missouri,MO,2014,None,ID Requested (General),No,Until Sentence Complete,Does Not Count,,2.5,C,62.2,62.2,0
+Montana,MT,,In-person absentee,ID Requested (General),No,When Incarcerated,Does Not Count,,2,D,62.5,61.8,-0.7
+Nebraska,NE,2015,Early Voting,None,No,Strictest,Partial Count,,3.5,B,60.3,62.8,2.5
+Nevada,NV,2012,Early Voting,None,Yes,When Incarcerated,Does Not Count,,4,B,56.4,57.4,1
+New Hampshire,NH,,None,ID Requested (General),No,When Incarcerated,No Provisional Vote,,1,F,70.2,71.4,1.2
+New Jersey,NJ,,In-person absentee,None,No,Until Sentence Complete,Partial Count,,3,C,61.5,64.4,2.9
+New Mexico,NM,2016,Early Voting,None,Yes,Until Sentence Complete,Partial Count,,5,A,54.6,54.5,-0.1
+New York,NY,2011,Early Voting,None,No,Until Sentence Complete,Partial Count,,4,B,53.1,56.8,3.7
+North Carolina,NC,,Early Voting,None,No,Until Sentence Complete,Does Not Count,,2.5,C,64.8,64.5,-0.3
+North Dakota,ND,,Early Voting,Strict Proof of Identity,Yes,When Incarcerated,No Provisional Vote,,2,D,59.8,60.8,1
+Ohio,OH,2017,In-person absentee,Strict Proof of Identity,No,When Incarcerated,Partial Count,,2.5,C,64.5,62.9,-1.6
+Oklahoma,OK,2018,In-person absentee,ID Requested (General),No,Until Sentence Complete,Does Not Count,,3.5,B,49.2,52.3,3.1
+Oregon,OR,2010,All-mail with EV options,None,No,When Incarcerated,Partial Count,,3.5,B,63.1,66.2,3.1
+Pennsylvania,PA,2015,None,None,No,When Incarcerated,Partial Count,,2.5,C,59.5,63.6,4.1
+Rhode Island,RI,2017,None,Photo ID Requested,No,When Incarcerated,Partial Count,,2.5,C,58,59.1,1.1
+South Carolina,SC,2012,None,Photo ID Requested,No,Until Sentence Complete,Does Not Count,,2.5,C,56.3,56.7,0.4
+South Dakota,SD,,In-person absentee,Photo ID Requested,Yes,Until Sentence Complete,Does Not Count,,3.5,B,59.3,58.6,-0.7
+Tennessee,TN,2017,Early Voting,Strict Photo ID,Yes,Strictest,Does Not Count,,3,C,51.9,51.1,-0.8
+Texas,TX,,Early Voting,Photo ID Requested,Yes,Until Sentence Complete,Does Not Count,,3.5,B,49.6,51.4,1.8
+Utah,UT,2010,All-mail with EV options,ID Requested (General),Yes,When Incarcerated,Partial Count,,4.5,A,55.5,56.8,1.3
+Vermont,VT,2015,In-person absentee,None,No,Never,Does Not Count,,4,B,60.7,63.7,3
+Virginia,VA,2013,In-person absentee,Strict Photo ID,No,Strictest,Does Not Count,,2,D,66.1,66.1,0
+Washington,WA,2008,All-mail with EV options,ID Requested (General),No,Until Sentence Complete,Partial Count,,4,B,64.8,63.7,-1.1
+West Virginia,WV,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count,,4,B,46.3,50.2,3.9
+Wisconsin,WI,2017,In-person absentee,Strict Photo ID,No,Until Sentence Complete,Does Not Count,,2.5,C,72.9,69.5,-3.4
+Wyoming,WY,,In-person absentee,None,Yes,Strictest,Does Not Count,,3,C,58.6,60.2,1.6
