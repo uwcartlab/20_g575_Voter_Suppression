@@ -4,7 +4,11 @@ window.onload = setMap();
 // variables for data join from csv
 var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote", "Rating", "Grade"];
 var expressed = attrArray[7]; //initial attribute
-var colorClasses;
+var rectA;
+var rectB;
+var rectC;
+var rectD;
+var rectF;
 
 //set up choropleth map
 function setMap(){
@@ -179,6 +183,56 @@ function setEnumerationUnits(usaStates, map, path){
           .text('{"fill": "#000"}');
 };
 
+function setLegend() {
+  var x = 20,
+      width = 50,
+      height = 30;
+  var gradeArray = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F"
+  ];
+  var colorArray = [
+    "#f2f0f7",
+    "#cbc9e2",
+    "#9e9ac8",
+    "#756bb1",
+    "#54278f"
+  ];
+  var legend = d3.select(".panel-body")
+    .append("svg")
+    .attr("width", 350)
+    .attr("height", 300);
+
+  for(var i=0; i<gradeArray.length; i++) {
+    legend.append("rect")
+      .attr("x", x)
+      .attr("y", 50 * (i +1))
+      .attr("width", width)
+      .attr("height", height)
+      .style("fill", colorArray[i]);
+    legend.append("text")
+      .attr("x", x + 2 * width)
+      .attr("y", (50 * (i +1) + 20))
+      .text(gradeArray[i])
+      .attr("font", "Quicksand")
+      .attr("font-size", "20px")
+      .attr("fill", "black");
+  };
+
+  var gradeTitle = legend.append("text")
+    .attr("x", x)
+    .attr("y", 35)
+    .text("Composite Grade")
+    .attr("font", "Quicksand")
+    .attr("font-size", "24px")
+    .attr("fill", "black")
+    .attr("font-weight", "bold");
+};
+setLegend();
+
 function highlight(props, usaStates){
     //             //change STROKE highlight method
     //Call setlabel to create label
@@ -195,7 +249,7 @@ function highlight(props, usaStates){
 };
 
 //function to reset the element style on mouseout
-function dehighlight(props, usaStates){
+function dehighlight(props, usaStates, rectA, rectB, rectC, rectD, rectF){
   //             // STROKE DEHIGHLIGHT
   for(var i =0; i < usaStates.length; i++) {
     var tempStr = "." + usaStates[i].properties.StateAbb.replace(/\s+/g, '');
@@ -264,88 +318,3 @@ function setLabel(props){
 function defaultPanel() {
   document.getElementById("retrieveTitle").innerHTML="No State Selected";
 };
-
-function setLegend() {
-  var x = 20,
-      width = 50,
-      height = 30;
-  var legend = d3.select(".panel-body")
-    .append("svg")
-    .attr("width", 350)
-    .attr("height", 260)
-  var rectA = legend.append("rect")
-    .attr("x", x)
-    .attr("y", 10)
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "#f2f0f7");
-  var rectB = legend.append("rect")
-    .attr("x", x)
-    .attr("y", 60)
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "cbc9e2");
-  var rectC = legend.append("rect")
-    .attr("x", x)
-    .attr("y", 110)
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "#9e9ac8");
-  var rectD = legend.append("rect")
-    .attr("x", x)
-    .attr("y", 160)
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "#756bb1");
-  var rectF = legend.append("rect")
-    .attr("x", x)
-    .attr("y", 210)
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "#54278f");
-
-  var textA = legend.append("text")
-    .attr("x", x + 2 * width)
-    .attr("y", 30)
-    .text("A")
-    .attr("font", "Quicksand")
-    .attr("font-size", "20px")
-    .attr("fill", "black");
-
-  var textB = legend.append("text")
-    .attr("x", x + 2 * width)
-    .attr("y", 80)
-    .text("B")
-    .attr("font", "Quicksand")
-    .attr("font-size", "20px")
-    .attr("fill", "black");
-
-    var textC = legend.append("text")
-    .attr("x", x + 2 * width)
-    .attr("y", 130)
-    .text("C")
-    .attr("font", "Quicksand")
-    .attr("font-size", "20px")
-    .attr("fill", "black");
-
-    var textD = legend.append("text")
-    .attr("x", x + 2 * width)
-    .attr("y", 180)
-    .text("D")
-    .attr("font", "Quicksand")
-    .attr("font-size", "20px")
-    .attr("fill", "black");
-
-    var textF = legend.append("text")
-    .attr("x", x + 2 * width)
-    .attr("y", 230)
-    .text("F")
-    .attr("font", "Quicksand")
-    .attr("font-size", "20px")
-    .attr("fill", "black");
-
-
-
-
-};
-setLegend();
