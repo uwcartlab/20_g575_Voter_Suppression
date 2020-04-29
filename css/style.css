@@ -7,7 +7,7 @@
 .header {
   font-family: Gotham;
   text-align: center;
-  color: black;
+  color: #54278f;
   background-color: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -17,15 +17,8 @@
 /* Link colors */
 .externallink {
   color: #54278f !important;
-  font-weight: bold;
-}
-
-/* a and .externallink {
-  color: #756bb1 !important;
-} */
-
-.overlay {
-  text-decoration: none !important;
+  font-weight: bolder;
+  font-size: 11pt;
 }
 
               /* PARAGRAPH STYLES */
@@ -37,16 +30,24 @@
   padding-left: 2%;
 }
 
+#Welcome {
+  font-family: Quicksand;
+  font-weight: normal;
+  color: black;
+}
+
 .paragraph {
-  font-family: serif;
+  font-family: Quicksand;
+  font-weight: normal;
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
   color: black;
 }
 
-#welcome {
- font-weight: normal;
+#paragraphTitle {
+  color: #54278f;
+  font-size: 30pt;
 }
 
 #imageTitle {
@@ -56,6 +57,12 @@
 
 #embeddedImg {
   padding-bottom: 40px;
+}
+
+#videosource {
+  border-radius: 10px;
+  border-color: #756bb1;
+  border-width: 6px;
 }
 
               /* M A P  A N D  L E G E N D */
@@ -84,8 +91,8 @@
 }
 
 .retrieveContainer {
-  padding-left: 77vw;
-  bottom: 390vh; /* pushes retrievePanel up */
+  padding-left: 76vw;
+  bottom: 427vh; /* pushes retrievePanel up */
   position: relative;
   pointer-events: none;
 }
@@ -102,6 +109,10 @@
   pointer-events: none;
   color: #fff;
   font-size: 8pt;
+}
+
+.overlay { /* Filter Panel */
+  text-decoration: none !important;
 }
 
 
@@ -128,8 +139,8 @@
 
 .panel2 {
   float: right !important;
-  padding-right: 7.8%; /* Controls Horizontal Placement of Filter Panel */
-  padding-top: 40vh;
+  padding-right: 4%; /* Pushes panel left and right */
+  padding-top: 48vh; /* Pushes down */
   position: relative;
   pointer-events: auto;
   z-index: 1;
@@ -143,11 +154,29 @@
 .panel-title {
   color: white !important;
   border-color: gray;
+  padding-right: 60px; /* Controls Overlay Panel Width */
 }
 
 .panel-title2 {
   color: white !important;
   border-color: gray;
+}
+
+.panel-body2 {
+  border-color: black !important;
+  border-width: 1;
+  z-index: 0;
+}
+
+#collapse8 { /* Overlay Panel Body */
+  background-color: #9e9ac8;
+  color: #fff;
+  font-family: Quicksand;
+  padding-left: 5px;
+  line-height: 18pt;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
 }
 
 /* MAP STYLES */
@@ -162,6 +191,8 @@
   width: 67vw;
   overflow-x: scroll;
   bottom: 25px;
+  stroke: #fff;
+  stroke-width: 1.1;
 }
 
 .states {
@@ -180,7 +211,7 @@
 
 /* RETRIEVE PANEL STYLES */
 
-.infolabel {
+/* .infolabel {
 margin: 0 20px 0 0;
 position: absolute;
 height: 75px;
@@ -199,7 +230,7 @@ padding: 0;
 display: inline-block;
 line-height: 1em;
 text-align: center;
-}
+} */
 
 
 

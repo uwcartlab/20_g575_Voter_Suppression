@@ -257,7 +257,8 @@ function dehighlight(props, usaStates, rectA, rectB, rectC, rectD, rectF){
       .style("opacity", "1");
   }
   var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-        .style("stroke-width", "0px");
+        .style("stroke-width", "1.1px")
+        .style("stroke", "#fff");
   defaultPanel();
   //
   //   function getStyle(element, styleName){
