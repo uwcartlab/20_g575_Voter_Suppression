@@ -9,6 +9,8 @@
   text-align: center;
   color: black;
   background-color: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -83,7 +85,7 @@
 
 .retrieveContainer {
   padding-left: 77vw;
-  bottom: 387vh; /* pushes retrievePanel up */
+  bottom: 360vh; /* pushes retrievePanel up */
   position: relative;
   pointer-events: none;
 }
@@ -126,7 +128,7 @@
 
 .panel2 {
   float: right !important;
-  padding-right: 8%;
+  padding-right: 6%;
   padding-top: 40vh;
   position: relative;
   pointer-events: auto;
