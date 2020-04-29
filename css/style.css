@@ -94,15 +94,15 @@
 
 .retrieveContainer {
   padding-left: 76vw;
-  bottom: 485vh; /* pushes retrievePanel up */
+  bottom: 555vh; /* pushes retrievePanel up */
   position: relative;
   pointer-events: none;
 }
 
 .retrievePanel {
   width: 20vw;
-  /* background-color: #adadad; */
-  background-image: linear-gradient(to bottom, #54278f 0, #756bb1 100%) !important;
+  background-color: #54278f;
+  /* background-image: linear-gradient(to bottom, #54278f 0, #9e9ac8 100%) !important; */
   position: relative;
   text-align: left;
   border-radius: 5px;
@@ -111,6 +111,7 @@
   pointer-events: none;
   color: #fff;
   font-size: 8pt;
+  opacity: 90%;
 }
 
 .overlay { /* Filter Panel */
