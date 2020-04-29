@@ -140,7 +140,12 @@
 
 .panel-title {
   color: white !important;
-  /* pointer-events: none; */
+  border-color: gray;
+}
+
+.panel-title2 {
+  color: white !important;
+  border-color: gray;
 }
 
 /* MAP STYLES */
