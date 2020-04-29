@@ -63,7 +63,7 @@
 /* Map/Legend/Retrieve Containers */
 .map-row {
   position: absolute;
-  padding-top: 0vh;
+  padding-top: 5vh;
 }
 
 .map-row::after {
@@ -85,7 +85,7 @@
 
 .retrieveContainer {
   padding-left: 77vw;
-  bottom: 360vh; /* pushes retrievePanel up */
+  bottom: 390vh; /* pushes retrievePanel up */
   position: relative;
   pointer-events: none;
 }
@@ -128,7 +128,7 @@
 
 .panel2 {
   float: right !important;
-  padding-right: 6%;
+  padding-right: 7.8%; /* Controls Horizontal Placement of Filter Panel */
   padding-top: 40vh;
   position: relative;
   pointer-events: auto;
