@@ -3,6 +3,12 @@
   font-family: Gotham;
   src: url(/img/Gotham-Bold.otf);
 }
+
+.header {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .headerText {
   font-family: Gotham;
 }
