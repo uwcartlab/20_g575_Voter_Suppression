@@ -94,9 +94,11 @@
 
 .retrieveContainer {
   padding-left: 76vw;
-  bottom: 565vh; /* pushes retrievePanel up */
-  position: relative;
+  padding-top: 20vh;
+  /* bottom: 565vh; pushes retrievePanel up */
+  position: absolute;
   pointer-events: none;
+  z-index: 1;
 }
 
 .retrievePanel {
