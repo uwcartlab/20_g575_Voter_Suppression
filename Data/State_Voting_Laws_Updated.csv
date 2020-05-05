@@ -1,4 +1,4 @@
-name,StateAbb,Online Reg Implement Yr,Early Voting Status,Voter ID Requirement,Election Day Vote Centers,Rights Lost to Felons,Incorrectly Cast Provisional Vote,,Rating,Grade,Voter Turnout % (2012 General),Voter Turnout % (2016),Change in Voter Turnout %
+name,StateAbb,OnlineRegImplementYr,EarlyVotingStatus,VoterIDRequirement,ElectionDayVoteCenters,RightsLosttoFelons,IncorrectlyCastProvisionalVote,,Rating,Grade,Voter Turnout % (2012 General),Voter Turnout % (2016),Change in Voter Turnout %
 Alabama,AL,2016,None,Photo ID Requested,No,Strictest,Does Not Count,,2,D,58.6,58.8,0.2
 Alaska,AK,2015,Early Voting,ID Requested (General),No,Until Sentence Complete,Partial Count,,3.5,B,58.7,61,2.3
 Arizona,AZ,2002,Early Voting,Strict Proof of Identity,Yes,Strictest,Partial Count,,3.5,B,52.6,54.9,2.3

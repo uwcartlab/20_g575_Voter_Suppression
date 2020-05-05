@@ -2,7 +2,7 @@
 window.onload = setMap();
 
 // variables for data join from csv
-var attrArray = ["Online Reg Implement Yr", "Early Voting Status", "Voter ID Requirement", "Election Day Vote Centers", "Rights Lost to Felons", "Incorrectly Cast Provisional Vote", "Rating", "Grade"];
+var attrArray = ["OnlineRegImplementYr", "EarlyVotingStatus", "VoterIDRequirement", "ElectionDayVoteCenters", "RightsLosttoFelons", "IncorrectlyCastProvisionalVote", "Rating", "Grade"];
 var expressed = attrArray[7]; //initial attribute
 var rectA;
 var rectB;
@@ -100,16 +100,6 @@ function joinData(usaStates, csvData){
 
 //function to create color scale generator
 function findFill(data){
-
-    // // DARK BLUE COLOR SCALE
-    // var colorClasses = [
-    //     "#7da1db",
-    //     "#5c7aaa",
-    //     "#2854a5",
-    //     "#1d2255",
-    //     "#0d1130"
-    // ];
-
     // PURPLE COLOR SCALE
     colorClasses = [
         "#f2f0f7",
@@ -119,36 +109,77 @@ function findFill(data){
         "#54278f"
     ];
 
-    // RED COLOR SCALE
-    // var colorClasses = [
-    //     "#fee5d9",
-    //     "#fcae91",
-    //     "#fb6a4a",
-    //     "#de2d26",
-    //     "#a50f15"
-    // ];
-
-    // GREEN COLOR SCALE
-    // var colorClasses = [
-    //     "#edf8e9",
-    //     "#bae4b3",
-    //     "#74c476",
-    //     "#31a354",
-    //     "#006d2c"
-    // ];
+    // if(!isNaN(data.properties.OnlineRegImplementYr)) {
+    //   return colorClasses[0];
+    // } else {
+    //   return colorClasses[4];
+    // }
 
 
-    if(data.properties.Grade == "A") {
+    // if(data.properties.EarlyVotingStatus == "Early Voting") {
+    //   return colorClasses[0];
+    // } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
+    //   return colorClasses[1];
+    // } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
+    //   return colorClasses[2];
+    // } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
+    //   return colorClasses[3];
+    // } else {
+    //   return colorClasses[4];
+    // }
+
+    // if(data.properties.VoterIDRequirement == "None") {
+    //   return colorClasses[0];
+    // } else if(data.properties.VoterIDRequirement == "ID Requested (General)") {
+    //   return colorClasses[1];
+    // } else if(data.properties.VoterIDRequirement =="Photo ID Requested") {
+    //   return colorClasses[2];
+    // } else if(data.properties.VoterIDRequirement =="Strict Proof of Identity"){
+    //   return colorClasses[3];
+    // } else {
+    //   return colorClasses[4];
+    // }
+
+    // if(data.properties.ElectionDayVoteCenters == "Yes") {
+    //   return colorClasses[0];
+    // } else if(data.properties.ElectionDayVoteCenters =="Sometimes") {
+    //   return colorClasses[2];
+    // } else {
+    //   return colorClasses[4];
+    // }
+
+    // if(data.properties.RightsLosttoFelons == "Never") {
+    //   return colorClasses[0];
+    // } else if(data.properties.RightsLosttoFelons == "When Incarcerated") {
+    //   return colorClasses[1];
+    // } else if(data.properties.RightsLosttoFelons =="Until Sentence Complete") {
+    //   return colorClasses[2];
+    // } else {
+    //   return colorClasses[4];
+    // }
+
+    if(data.properties.IncorrectlyCastProvisionalVote == "Full Count") {
       return colorClasses[0];
-    } else if(data.properties.Grade == "B") {
+    } else if(data.properties.IncorrectlyCastProvisionalVote == "Partial Count") {
       return colorClasses[1];
-    } else if(data.properties.Grade =="C") {
+    } else if(data.properties.IncorrectlyCastProvisionalVote =="Does Not Count") {
       return colorClasses[2];
-    } else if(data.properties.Grade =="D"){
-      return colorClasses[3];
     } else {
       return colorClasses[4];
     }
+
+
+    // if(data.properties.Grade == "A") {
+    //   return colorClasses[0];
+    // } else if(data.properties.Grade == "B") {
+    //   return colorClasses[1];
+    // } else if(data.properties.Grade =="C") {
+    //   return colorClasses[2];
+    // } else if(data.properties.Grade =="D"){
+    //   return colorClasses[3];
+    // } else {
+    //   return colorClasses[4];
+    // }
 
 };
 
@@ -300,15 +331,15 @@ function setLabel(props){
 
   //Update retrieve panel inner HTML with hover
   var textBox = props.name +"<br/>" + "Grade: " + props.Grade + "<br/>";
-  if(isNaN(props["Online Reg Implement Yr"])) {
+  if(isNaN(props["OnlineRegImplementYr"])) {
     textBox+= "Online Registration: No<br/>";
   } else {
     textBox+= "Online Registration: Yes<br/>";
   };
-  textBox+="Early Voting Status: " + props["Early Voting Status"] + "<br/>" + "Voter ID Requirement: " + props["Voter ID Requirement"] + "<br/>";
-  textBox+= "Election Day Vote Centers: " + props["Election Day Vote Centers"] + "<br/>";
-  textBox+= "Rights Lost to Felons: " + props["Rights Lost to Felons"] + "<br/>";
-  textBox+= "Incorrectly Cast Provisional Vote: " + props["Incorrectly Cast Provisional Vote"] + "<br/>";
+  textBox+="Early Voting Status: " + props["EarlyVotingStatus"] + "<br/>" + "Voter ID Requirement: " + props["VoterIDRequirement"] + "<br/>";
+  textBox+= "Election Day Vote Centers: " + props["ElectionDayVoteCenters"] + "<br/>";
+  textBox+= "Rights Lost to Felons: " + props["RightsLosttoFelons"] + "<br/>";
+  textBox+= "Incorrectly Cast Provisional Vote: " + props["IncorrectlyCastProvisionalVote"] + "<br/>";
 
   document.getElementById("retrieveTitle").innerHTML=textBox;
   d3.select("#retrieveTitle")
