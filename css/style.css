@@ -36,6 +36,16 @@
   color: white;
 }
 
+#welcomelink {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+#Welcome a:hover {
+  color: cyan !important;
+}
+
+
 .paragraph {
   font-family: Quicksand;
   font-weight: normal;
