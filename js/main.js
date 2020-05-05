@@ -338,7 +338,7 @@ function setLabel(props){
   };
   textBox+="Early Voting Status: " + props["EarlyVotingStatus"] + "<br/>" + "Voter ID Requirement: " + props["VoterIDRequirement"] + "<br/>";
   textBox+= "Election Day Vote Centers: " + props["ElectionDayVoteCenters"] + "<br/>";
-  textBox+= "Rights Lost to Felons: " + props["RightsLosttoFelons"] + "<br/>";
+  textBox+= "Voting Rights Lost to Felons: " + props["RightsLosttoFelons"] + "<br/>";
   textBox+= "Incorrectly Cast Provisional Vote: " + props["IncorrectlyCastProvisionalVote"] + "<br/>";
 
   document.getElementById("retrieveTitle").innerHTML=textBox;
