@@ -259,12 +259,12 @@ function setEnumerationUnits(usaStates, map, path){
 function highlight(props, usaStates){
     //             //change STROKE highlight method
     //Call setlabel to create label
-    for(var i =0; i < usaStates.length; i++) {
-      var tempStr = "." + usaStates[i].properties.StateAbb.replace(/\s+/g, '');
+    for(var i =0; i < stateAbbs.length; i++) {
+      var tempStr = "#" + stateAbbs[i];
       d3.selectAll(tempStr)
         .style("opacity", "0.5");
     }
-    var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+    var selected = d3.selectAll("#" + props.StateAbb)
         .style("stroke", "#00FFFF") //highlight color
         .style("stroke-width", "2px")
         .style("opacity", "1"); //highlight width
@@ -274,12 +274,12 @@ function highlight(props, usaStates){
 //function to reset the element style on mouseout
 function dehighlight(props, usaStates, rectA, rectB, rectC, rectD, rectF){
   //             // STROKE DEHIGHLIGHT
-  for(var i =0; i < usaStates.length; i++) {
-    var tempStr = "." + usaStates[i].properties.StateAbb.replace(/\s+/g, '');
+  for(var i =0; i < stateAbbs.length; i++) {
+    var tempStr = "#" + stateAbbs[i];
     d3.selectAll(tempStr)
       .style("opacity", "1");
   }
-  var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
+  var selected = d3.selectAll("#" + props.StateAbb)
         .style("stroke-width", "1.1px")
         .style("stroke", "#fff");
   defaultPanel();
