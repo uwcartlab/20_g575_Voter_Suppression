@@ -4,7 +4,7 @@ window.onload = setMap();
 // variables for data join from csv
 var attrArray = ["OnlineRegImplementYr", "EarlyVotingStatus", "VoterIDRequirement", "ElectionDayVoteCenters", "RightsLosttoFelons", "IncorrectlyCastProvisionalVote", "Rating", "Grade"];
 var expressed = attrArray[7]; //initial attribute
-var colorClasses;
+// var colorClasses;
 // var rectA;
 // var rectB;
 // var rectC;
@@ -113,10 +113,16 @@ function joinData(usaStates, csvData){
 //   ];
 // }
 //function to create color scale generator
-// function findFill(data){
+function findFill(data){
     // PURPLE COLOR SCALE
+    var  colorClasses = [
+        "#f2f0f7",
+        "#cbc9e2",
+        "#9e9ac8",
+        "#756bb1",
+        "#54278f"
+    ];
 
-function fillOnline(data, colorClasses) {
     if(!isNaN(data.properties.OnlineRegImplementYr)) {
       return colorClasses[0];
     } else {
@@ -124,75 +130,82 @@ function fillOnline(data, colorClasses) {
     }
   };
 
-function fillEarly(data, colorClasses) {
-    if(data.properties.EarlyVotingStatus == "Early Voting") {
-      return colorClasses[0];
-    } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
-      return colorClasses[1];
-    } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
-      return colorClasses[2];
-    } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
-      return colorClasses[3];
-    } else {
-      return colorClasses[4];
-    }
-  };
+// function fillOnline(data, colorClasses) {
+//     if(!isNaN(data.properties.OnlineRegImplementYr)) {
+//       return colorClasses[0];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
+//
+// function fillEarly(data, colorClasses) {
+//     if(data.properties.EarlyVotingStatus == "Early Voting") {
+//       return colorClasses[0];
+//     } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
+//       return colorClasses[1];
+//     } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
+//       return colorClasses[2];
+//     } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
+//       return colorClasses[3];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
+//
+//   function fillID(data, colorClasses) {
+//     if(data.properties.VoterIDRequirement == "None") {
+//       return colorClasses[0];
+//     } else if(data.properties.VoterIDRequirement == "ID Requested (General)") {
+//       return colorClasses[1];
+//     } else if(data.properties.VoterIDRequirement =="Photo ID Requested") {
+//       return colorClasses[2];
+//     } else if(data.properties.VoterIDRequirement =="Strict Proof of Identity"){
+//       return colorClasses[3];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
+//
+//   function fillCenter(data, colorClasses) {
+//     if(data.properties.ElectionDayVoteCenters == "Yes") {
+//       return colorClasses[0];
+//     } else if(data.properties.ElectionDayVoteCenters =="Sometimes") {
+//       return colorClasses[2];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
+//
+//   function fillProvisional(data, colorClasses) {
+//     if(data.properties.IncorrectlyCastProvisionalVote == "Full Count") {
+//       return colorClasses[0];
+//     } else if(data.properties.IncorrectlyCastProvisionalVote == "Partial Count") {
+//       return colorClasses[1];
+//     } else if(data.properties.IncorrectlyCastProvisionalVote =="Does Not Count") {
+//       return colorClasses[2];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
+//
+//   function fillGrade(data, colorClasses) {
+//     if(data.properties.Grade == "A") {
+//       return colorClasses[0];
+//     } else if(data.properties.Grade == "B") {
+//       return colorClasses[1];
+//     } else if(data.properties.Grade =="C") {
+//       return colorClasses[2];
+//     } else if(data.properties.Grade =="D"){
+//       return colorClasses[3];
+//     } else {
+//       return colorClasses[4];
+//     }
+//   };
 
-  function fillID(data, colorClasses) {
-    if(data.properties.VoterIDRequirement == "None") {
-      return colorClasses[0];
-    } else if(data.properties.VoterIDRequirement == "ID Requested (General)") {
-      return colorClasses[1];
-    } else if(data.properties.VoterIDRequirement =="Photo ID Requested") {
-      return colorClasses[2];
-    } else if(data.properties.VoterIDRequirement =="Strict Proof of Identity"){
-      return colorClasses[3];
-    } else {
-      return colorClasses[4];
-    }
-  };
-
-  function fillCenter(data, colorClasses) {
-    if(data.properties.ElectionDayVoteCenters == "Yes") {
-      return colorClasses[0];
-    } else if(data.properties.ElectionDayVoteCenters =="Sometimes") {
-      return colorClasses[2];
-    } else {
-      return colorClasses[4];
-    }
-  };
-
-  function fillProvisional(data, colorClasses) {
-    if(data.properties.IncorrectlyCastProvisionalVote == "Full Count") {
-      return colorClasses[0];
-    } else if(data.properties.IncorrectlyCastProvisionalVote == "Partial Count") {
-      return colorClasses[1];
-    } else if(data.properties.IncorrectlyCastProvisionalVote =="Does Not Count") {
-      return colorClasses[2];
-    } else {
-      return colorClasses[4];
-    }
-  };
-
-  function fillGrade(data, colorClasses) {
-    console.log(colorClasses);
-    if(data.properties.Grade == "A") {
-      return colorClasses[0];
-    } else if(data.properties.Grade == "B") {
-      return colorClasses[1];
-    } else if(data.properties.Grade =="C") {
-      return colorClasses[2];
-    } else if(data.properties.Grade =="D"){
-      return colorClasses[3];
-    } else {
-      return colorClasses[4];
-    }
-  };
 
 
-
-function setEnumerationUnits(usaStates, map, path){
-
+function setEnumerationUnits(usaStates, map, path, colorClasses){
+  console.log(colorClasses);
     //add states to map
     var states = map.selectAll(".states")
         .data(usaStates)
@@ -209,7 +222,7 @@ function setEnumerationUnits(usaStates, map, path){
               dehighlight(d.properties, usaStates);
           })
         .attr("fill", function(d) {
-          return fillGrade(d);
+          return findFill(d);
         });
 
 
@@ -273,31 +286,31 @@ function setEnumerationUnits(usaStates, map, path){
 // setLegend();
 
 // Reexpress based on expanded panel
-function reexpress(data) {
-
-  colorClasses = [
-    "#f2f0f7",
-    "#cbc9e2",
-    "#9e9ac8",
-    "#756bb1",
-    "#54278f"
-];
+// function reexpress(data) {
+//
+//   colorClasses = [
+//     "#f2f0f7",
+//     "#cbc9e2",
+//     "#9e9ac8",
+//     "#756bb1",
+//     "#54278f"
+// ];
 
   // Make variables for legend panels
-  var gradePanel = d3.select("div.collapse1"),
-    earlyPanel = d3.select("div.collapse2"),
-    provisionalPanel = d3.select("div.collapse3"),
-    onlinePanel = d3.select("div.collapse4"),
-    idPanel = d3.select("div.collapse5"),
-    centersPanel = d3.select("div.collapse6"),
-    felonPanel = d3.select("div.collapse7");
+  // var gradePanel = d3.select("div.collapse1"),
+  //   earlyPanel = d3.select("div.collapse2"),
+  //   provisionalPanel = d3.select("div.collapse3"),
+  //   onlinePanel = d3.select("div.collapse4"),
+  //   idPanel = d3.select("div.collapse5"),
+  //   centersPanel = d3.select("div.collapse6"),
+  //   felonPanel = d3.select("div.collapse7");
 
   // Make conditional statements that call appropriate color fill functions
-  gradePanel.onclick = function() {
-    fillGrade(data, colorClasses)
-  };
-
-}
+//   gradePanel.onclick = function() {
+//     fillGrade(data, colorClasses)
+//   };
+//
+// };
 
 function highlight(props, usaStates){
     //             //change STROKE highlight method
