@@ -3,9 +3,21 @@ window.onload = setMap();
 
 // variables for data join from csv
 var attrArray = ["OnlineRegImplementYr", "EarlyVotingStatus", "VoterIDRequirement", "ElectionDayVoteCenters", "RightsLosttoFelons", "IncorrectlyCastProvisionalVote", "Rating", "Grade"];
-var expressed = attrArray[7]; //initial attribute
-
-
+var expressed = attrArray[7];
+var expressedOpt = ["A", "B", "C", "D", "F"]; //initial attribute
+var collapse2Data = attrArray[1];
+var collapse2Opt = ["Early Voting", "In-person absentee", "All-mail with EV options", "Enacted EV, not implemented", "None"];
+var collapse3Data = attrArray[5];
+var collapse3Opt = ["Full Count", "Partial Count", "Does Not Count", "No Provisional Vote"];
+var collapse4Data = attrArray[0]; //YES OR NO - check if number
+var collapse4Opt = ["yes", "no"];
+var collapse5Data = attrArray[2];
+var collapse5Opt = ["None", "ID Requested (General)", "Photo ID Requested", "Strict Proof of Identity", "Strict Photo ID"];
+var collapse6Data = attrArray[3];
+var collapse6Opt = ["Yes", "Sometimes","No"];
+var collapse7Data = attrArray[4];
+var collapse7Opt = ["Never", "When Incarcerated", "Until Sentence Complete", "Strictest"];
+var stateAbbs = ["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"];
 //set up choropleth map
 function setMap(){
 
@@ -96,7 +108,7 @@ function joinData(usaStates, csvData){
 
 
 //function to create color scale generator
-function findFill(data){
+function findFill(data, attArray){
     // PURPLE COLOR SCALE
     var  colorClasses = [
         "#f2f0f7",
@@ -105,161 +117,64 @@ function findFill(data){
         "#756bb1",
         "#54278f"
     ];
+    if(attArray.length == 5) {
+      if(data == attArray[0]) {
+        return colorClasses[0];
+      } else if (data == attArray[1]) {
+        return colorClasses[1];
+      } else if (data==attArray[2]) {
+        return colorClasses[2];
+      } else if (data==attArray[3]) {
+        return colorClasses[3];
+      } else if(data==attArray[4]){
+        return colorClasses[4];
+      };
+    };
 
-$(".collapsed1").click(function() {
-  console.log("hello");
-  expressed = attrArray[7];
-    if(data.properties.Grade == "A") {
-      return colorClasses[0];
-    } else if(data.properties.Grade == "B") {
-      return colorClasses[1];
-    } else if(data.properties.Grade =="C") {
-      return colorClasses[2];
-    } else if(data.properties.Grade =="D"){
-      return colorClasses[3];
-    } else {
-      return colorClasses[4];
-    }
-  });
+    if(attArray.length == 4) {
+      if(data == attArray[0]) {
+        return colorClasses[0];
+      } else if (data == attArray[1]) {
+        return colorClasses[1];
+      } else if (data==attArray[2]) {
+        return colorClasses[2];
+      } else if (data==attArray[3]) {
+        return colorClasses[4];
+      };
+    };
 
+    if(attArray.length == 3) {
+      if(data == attArray[0]) {
+        return colorClasses[0];
+      } else if (data == attArray[1]) {
+        return colorClasses[2];
+      } else if (data==attArray[2]) {
+        return colorClasses[4];
+      };
+    };
+
+    if(attArray.length == 2) {
+      if(isNaN(data)) {
+        return  colorClasses[4];
+      } else {
+        return colorClasses[0];
+      };
+    };
 
   };
-    // $(".collapsed1").click(function() {
-    //   expressed = data.properties.Grade;
-    //   d3.selectAll(".states")
-    //     .style("fill", function(d) {
-    //       return gradeFill(d);
-    //     });
-    // };
-    // var gradePanel = d3.select("div.collapse1")
-    //   .data(data)
-    //   .enter()
-    //   .on('click', function(d) {
-        // if(data.properties.Grade == "A") {
-        //   return colorClasses[0];
-        // } else if(data.properties.Grade == "B") {
-        //   return colorClasses[1];
-        // } else if(data.properties.Grade =="C") {
-        //   return colorClasses[2];
-        // } else if(data.properties.Grade =="D"){
-        //   return colorClasses[3];
-        // } else {
-        //   return colorClasses[4];
-        // }
-    //   }),
-      // var earlyPanel = d3.select("div.collapse2"),
-      // provisionalPanel = d3.select("div.collapse3"),
-      // onlinePanel = d3.select("#collapse4"),
-      // idPanel = d3.select("div.collapse5"),
-      // centersPanel = d3.select("div.collapse6"),
-      // felonPanel = d3.select("div.collapse7");
-
-  //   onlinePanel.onclick = function() {
-  //     if(!isNaN(data.properties.OnlineRegImplementYr)) {
-  //       return colorClasses[0];
-  //     } else {
-  //       return colorClasses[4];
-  //     }
-  //   };
-  //
-  //   earlyPanel.onclick = function() {
-  //     if(data.properties.EarlyVotingStatus == "Early Voting") {
-  //       return colorClasses[0];
-  //     } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
-  //       return colorClasses[1];
-  //     } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
-  //       return colorClasses[2];
-  //     } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
-  //       return colorClasses[3];
-  //     } else {
-  //       return colorClasses[4];
-  //     }
-  //   };
-  //
-  // };
-
-// function fillOnline(data, colorClasses) {
-//     if(!isNaN(data.properties.OnlineRegImplementYr)) {
-//       return colorClasses[0];
-//     } else {
-//       return colorClasses[4];
-//     }
-//   };
-//
-
-    // if(data.properties.EarlyVotingStatus == "Early Voting") {
-    //   return colorClasses[0];
-    // } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
-    //   return colorClasses[1];
-    // } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
-    //   return colorClasses[2];
-    // } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
-    //   return colorClasses[3];
-    // } else {
-    //   return colorClasses[4];
-    // }
-//
-//     if(data.properties.VoterIDRequirement == "None") {
-//       return colorClasses[0];
-//     } else if(data.properties.VoterIDRequirement == "ID Requested (General)") {
-//       return colorClasses[1];
-//     } else if(data.properties.VoterIDRequirement =="Photo ID Requested") {
-//       return colorClasses[2];
-//     } else if(data.properties.VoterIDRequirement =="Strict Proof of Identity"){
-//       return colorClasses[3];
-//     } else {
-//       return colorClasses[4];
-//     }
-//
-
-//     if(data.properties.ElectionDayVoteCenters == "Yes") {
-//       return colorClasses[0];
-//     } else if(data.properties.ElectionDayVoteCenters =="Sometimes") {
-//       return colorClasses[2];
-//     } else {
-//       return colorClasses[4];
-//     }
-
-//
-
-//     if(data.properties.IncorrectlyCastProvisionalVote == "Full Count") {
-//       return colorClasses[0];
-//     } else if(data.properties.IncorrectlyCastProvisionalVote == "Partial Count") {
-//       return colorClasses[1];
-//     } else if(data.properties.IncorrectlyCastProvisionalVote =="Does Not Count") {
-//       return colorClasses[2];
-//     } else {
-//       return colorClasses[4];
-//     }
-
-//
-
-    // if(data.properties.Grade == "A") {
-    //   return colorClasses[0];
-    // } else if(data.properties.Grade == "B") {
-    //   return colorClasses[1];
-    // } else if(data.properties.Grade =="C") {
-    //   return colorClasses[2];
-    // } else if(data.properties.Grade =="D"){
-    //   return colorClasses[3];
-    // } else {
-    //   return colorClasses[4];
-    // }
-
-
-
-
-
-
 
 function setEnumerationUnits(usaStates, map, path){
+
     //add states to map
     var states = map.selectAll(".states")
         .data(usaStates)
         .enter()
         .append("path")
         .attr("class", function(d){
-            return "State: " + d.properties.StateAbb;
+            return "State:" + d.properties.StateAbb;
+        })
+        .attr("id", function(d){
+            return d.properties.StateAbb;
         })
         .attr("d", path)
           .on("mouseover", function(d){
@@ -269,7 +184,65 @@ function setEnumerationUnits(usaStates, map, path){
               dehighlight(d.properties, usaStates);
           })
         .attr("fill", function(d) {
-          return findFill(d);
+          return findFill(d.properties["Grade"], expressedOpt);
+        });
+
+
+        $(".collapsed1").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["Grade"], expressedOpt);
+              });
+          };
+        });
+        $(".collapsed2").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["EarlyVotingStatus"], collapse2Opt);
+              });
+          };
+        });
+        $(".collapsed3").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["IncorrectlyCastProvisionalVote"], collapse3Opt);
+              });
+          };
+        });
+        $(".collapsed4").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["OnlineRegImplementYr"], collapse4Opt);
+              });
+          };
+        });
+        $(".collapsed5").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["VoterIDRequirement"], collapse5Opt);
+              });
+          };
+        });
+        $(".collapsed6").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["ElectionDayVoteCenters"], collapse6Opt);
+              });
+          };
+        });
+        $(".collapsed7").click(function() {
+          for(var i =0; i < stateAbbs.length; i++) {
+            map.select("#" + stateAbbs[i])
+              .attr("fill", function(d) {
+                return findFill(d.properties["RightsLosttoFelons"], collapse7Opt);
+              });
+          };
         });
 
 
