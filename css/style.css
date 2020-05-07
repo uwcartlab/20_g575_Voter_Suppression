@@ -24,7 +24,7 @@
               /* PARAGRAPH STYLES */
 
 .InfoBody {
-  width: 65vw;
+  width: 67vw;
   line-height: 20pt;
   padding-top: 75vh; /* pushes paragraphs down below map */
   padding-left: 2%;
@@ -54,16 +54,20 @@
   text-align: left;
   color: black;
   font-size: 14pt;
+  line-height: 25pt;
 }
 
 #paragraphTitle {
   color: #54278f;
-  font-size: 30pt;
+  font-size: 33pt;
+  font-family: Quicksand;
+  text-align: left;
 }
 
 #imageTitle {
   padding-top: 10px;
   text-align: center;
+  font-family: Quicksand;
 }
 
 #embeddedImg {
@@ -74,6 +78,7 @@
   border-radius: 10px;
   border-color: #756bb1;
   border-width: 6px;
+  height: 450px;
 }
 
 /* Closing Sources */
