@@ -245,11 +245,6 @@ function setEnumerationUnits(usaStates, map, path){
           };
         });
 
-
-      //dehighlight for stroke
-      // var desc = states.append("desc")
-      //     .text('{"stroke": "#fff", "stroke-width": ".1px"}');
-
       //alternate dehighlight for fill
       var desc = states.append("desc")
           .text('{"fill": "#000"}');
@@ -283,38 +278,6 @@ function dehighlight(props, usaStates, rectA, rectB, rectC, rectD, rectF){
         .style("stroke-width", "1.1px")
         .style("stroke", "#fff");
   defaultPanel();
-  //
-  //   function getStyle(element, styleName){
-  //       var styleText = d3.select(element)
-  //           .select("desc")
-  //           .text();
-  //
-  //       var styleObject = JSON.parse(styleText);
-  //
-  //       return styleObject[styleName];
-  //       };
-
-                        //FILL DEHIGHLIGHT
-    // var selected = d3.selectAll("." + props.StateAbb.replace(/\s+/g, ''))
-    //     .transition()
-    //     .duration(200)
-    //     .style("fill", function(){
-    //         return getStyle(this, "fill")
-    //     });
-    //
-    // function getStyle(element, styleName){
-    //     var styleText = d3.select(element)
-    //         .select("desc")
-    //         .text();
-    //
-    //     var styleObject = JSON.parse(styleText);
-    //
-    //     return styleObject[styleName];
-    //     };
-    //
-    // // remove label on dehighlight
-    // d3.select(".infolabel")
-    //     .remove();
 
 };
 
