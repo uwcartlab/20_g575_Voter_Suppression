@@ -4,12 +4,7 @@ window.onload = setMap();
 // variables for data join from csv
 var attrArray = ["OnlineRegImplementYr", "EarlyVotingStatus", "VoterIDRequirement", "ElectionDayVoteCenters", "RightsLosttoFelons", "IncorrectlyCastProvisionalVote", "Rating", "Grade"];
 var expressed = attrArray[7]; //initial attribute
-// var colorClasses;
-// var rectA;
-// var rectB;
-// var rectC;
-// var rectD;
-// var rectF;
+
 
 //set up choropleth map
 function setMap(){
@@ -100,18 +95,6 @@ function joinData(usaStates, csvData){
 };
 
 
-// Constructor to create fill functions
-// Function called depending on expanded panel
-// function Fill(data, colorClasses) {
-//   this.data = data;
-//   this.colorClasses = [
-//     "#f2f0f7",
-//     "#cbc9e2",
-//     "#9e9ac8",
-//     "#756bb1",
-//     "#54278f"
-//   ];
-// }
 //function to create color scale generator
 function findFill(data){
     // PURPLE COLOR SCALE
@@ -122,52 +105,78 @@ function findFill(data){
         "#756bb1",
         "#54278f"
     ];
-    var gradePanel = d3.select("div.collapse1")
-      .data(data)
-      .enter()
-      .on('click', function(d) {
-        if(data.properties.Grade == "A") {
-          return colorClasses[0];
-        } else if(data.properties.Grade == "B") {
-          return colorClasses[1];
-        } else if(data.properties.Grade =="C") {
-          return colorClasses[2];
-        } else if(data.properties.Grade =="D"){
-          return colorClasses[3];
-        } else {
-          return colorClasses[4];
-        }
-      });
-      earlyPanel = d3.select("div.collapse2"),
-      provisionalPanel = d3.select("div.collapse3"),
-      onlinePanel = d3.select("#collapse4"),
-      idPanel = d3.select("div.collapse5"),
-      centersPanel = d3.select("div.collapse6"),
-      felonPanel = d3.select("div.collapse7");
 
-    onlinePanel.onclick = function() {
-      if(!isNaN(data.properties.OnlineRegImplementYr)) {
-        return colorClasses[0];
-      } else {
-        return colorClasses[4];
-      }
-    };
+$(".collapsed1").click(function() {
+  console.log("hello");
+  expressed = attrArray[7];
+    if(data.properties.Grade == "A") {
+      return colorClasses[0];
+    } else if(data.properties.Grade == "B") {
+      return colorClasses[1];
+    } else if(data.properties.Grade =="C") {
+      return colorClasses[2];
+    } else if(data.properties.Grade =="D"){
+      return colorClasses[3];
+    } else {
+      return colorClasses[4];
+    }
+  });
 
-    earlyPanel.onclick = function() {
-      if(data.properties.EarlyVotingStatus == "Early Voting") {
-        return colorClasses[0];
-      } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
-        return colorClasses[1];
-      } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
-        return colorClasses[2];
-      } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
-        return colorClasses[3];
-      } else {
-        return colorClasses[4];
-      }
-    };
 
   };
+    // $(".collapsed1").click(function() {
+    //   expressed = data.properties.Grade;
+    //   d3.selectAll(".states")
+    //     .style("fill", function(d) {
+    //       return gradeFill(d);
+    //     });
+    // };
+    // var gradePanel = d3.select("div.collapse1")
+    //   .data(data)
+    //   .enter()
+    //   .on('click', function(d) {
+        // if(data.properties.Grade == "A") {
+        //   return colorClasses[0];
+        // } else if(data.properties.Grade == "B") {
+        //   return colorClasses[1];
+        // } else if(data.properties.Grade =="C") {
+        //   return colorClasses[2];
+        // } else if(data.properties.Grade =="D"){
+        //   return colorClasses[3];
+        // } else {
+        //   return colorClasses[4];
+        // }
+    //   }),
+      // var earlyPanel = d3.select("div.collapse2"),
+      // provisionalPanel = d3.select("div.collapse3"),
+      // onlinePanel = d3.select("#collapse4"),
+      // idPanel = d3.select("div.collapse5"),
+      // centersPanel = d3.select("div.collapse6"),
+      // felonPanel = d3.select("div.collapse7");
+
+  //   onlinePanel.onclick = function() {
+  //     if(!isNaN(data.properties.OnlineRegImplementYr)) {
+  //       return colorClasses[0];
+  //     } else {
+  //       return colorClasses[4];
+  //     }
+  //   };
+  //
+  //   earlyPanel.onclick = function() {
+  //     if(data.properties.EarlyVotingStatus == "Early Voting") {
+  //       return colorClasses[0];
+  //     } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
+  //       return colorClasses[1];
+  //     } else if(data.properties.EarlyVotingStatus =="All-mail with EV options") {
+  //       return colorClasses[2];
+  //     } else if(data.properties.EarlyVotingStatus =="Enacted EV, not implemented"){
+  //       return colorClasses[3];
+  //     } else {
+  //       return colorClasses[4];
+  //     }
+  //   };
+  //
+  // };
 
 // function fillOnline(data, colorClasses) {
 //     if(!isNaN(data.properties.OnlineRegImplementYr)) {
@@ -177,7 +186,7 @@ function findFill(data){
 //     }
 //   };
 //
-// function fillEarly(data, colorClasses) {
+
     // if(data.properties.EarlyVotingStatus == "Early Voting") {
     //   return colorClasses[0];
     // } else if(data.properties.EarlyVotingStatus == "In-person absentee") {
@@ -189,9 +198,7 @@ function findFill(data){
     // } else {
     //   return colorClasses[4];
     // }
-//   };
 //
-//   function fillID(data, colorClasses) {
 //     if(data.properties.VoterIDRequirement == "None") {
 //       return colorClasses[0];
 //     } else if(data.properties.VoterIDRequirement == "ID Requested (General)") {
@@ -203,9 +210,8 @@ function findFill(data){
 //     } else {
 //       return colorClasses[4];
 //     }
-//   };
 //
-//   function fillCenter(data, colorClasses) {
+
 //     if(data.properties.ElectionDayVoteCenters == "Yes") {
 //       return colorClasses[0];
 //     } else if(data.properties.ElectionDayVoteCenters =="Sometimes") {
@@ -213,9 +219,9 @@ function findFill(data){
 //     } else {
 //       return colorClasses[4];
 //     }
-//   };
+
 //
-//   function fillProvisional(data, colorClasses) {
+
 //     if(data.properties.IncorrectlyCastProvisionalVote == "Full Count") {
 //       return colorClasses[0];
 //     } else if(data.properties.IncorrectlyCastProvisionalVote == "Partial Count") {
@@ -225,9 +231,9 @@ function findFill(data){
 //     } else {
 //       return colorClasses[4];
 //     }
-//   };
+
 //
-//   function fillGrade(data, colorClasses) {
+
     // if(data.properties.Grade == "A") {
     //   return colorClasses[0];
     // } else if(data.properties.Grade == "B") {
@@ -239,7 +245,10 @@ function findFill(data){
     // } else {
     //   return colorClasses[4];
     // }
-//   };
+
+
+
+
 
 
 
@@ -273,76 +282,6 @@ function setEnumerationUnits(usaStates, map, path){
           .text('{"fill": "#000"}');
 };
 
-// function setLegend() {
-//   var x = 20,
-//       width = 50,
-//       height = 30;
-//   var gradeArray = [
-//     "A",
-//     "B",
-//     "C",
-//     "D",
-//     "F"
-//   ];
-//   var colorArray = [
-//     "#f2f0f7",
-//     "#cbc9e2",
-//     "#9e9ac8",
-//     "#756bb1",
-//     "#54278f"
-//   ];
-//   var legend = d3.select(".panel-body")
-//     .append("svg")
-//     .attr("width", 350)
-//     .attr("height", 300);
-//
-//   for(var i=0; i<gradeArray.length; i++) {
-//     legend.append("rect")
-//       .attr("x", x)
-//       .attr("y", 50 * (i +1))
-//       .attr("width", width)
-//       .attr("height", height)
-//       .style("fill", colorArray[i]);
-//     legend.append("text")
-//       .attr("x", x + 2 * width)
-//       .attr("y", (50 * (i +1) + 20))
-//       .text(gradeArray[i])
-//       .attr("font", "Quicksand")
-//       .attr("font-size", "20px")
-//       .attr("fill", "black");
-//   };
-//
-//   var gradeTitle = legend.append("text")
-//     .attr("x", x)
-//     .attr("y", 35)
-//     .text("Composite Grade")
-//     .attr("font", "Quicksand")
-//     .attr("font-size", "24px")
-//     .attr("fill", "black")
-//     .attr("font-weight", "bold");
-// };
-// setLegend();
-
-// Reexpress based on expanded panel
-// function reexpress(data) {
-//
-//   colorClasses = [
-//     "#f2f0f7",
-//     "#cbc9e2",
-//     "#9e9ac8",
-//     "#756bb1",
-//     "#54278f"
-// ];
-
-  // Make variables for legend panels
-
-
-  // Make conditional statements that call appropriate color fill functions
-//   gradePanel.onclick = function() {
-//     fillGrade(data, colorClasses)
-//   };
-//
-// };
 
 function highlight(props, usaStates){
     //             //change STROKE highlight method
